@@ -1,0 +1,88 @@
+FORMALAB V5 — SİSTEMİ TAMAMLAMA, TASARIM STÜDYOSU VE UÇTAN UCA TESTLER
+
+Bu görev mevcut FormaLab projesinin V5 aşamasıdır. Proje henüz deneme/geliştirme aşamasında; CANLIYA ALINMAYACAK. Bu aşamada PayTR, iyzico, SMS, e-posta, gerçek kargo API bağlantısı, gerçek fiyatlandırma ve alan adı bilgilerini isteme. Fiyatlar geçici kalabilir. Öncelik eksiksiz, kullanışlı, güvenilir çalışan sistem kurmaktır.
+
+ÖNEMLİ: V1–V4 özelliklerini, mevcut siparişleri, tasarımları, kullanıcıları, admin rollerini ve güvenlik kurallarını koru. Sıfırdan kurma, verileri silme, sahte başarılı işlem gösterme.
+
+1. V4'TE TEST EDİLMEYENLERİ TAMAMLA
+- Müşteri hesabında çoklu kargo paketlerinin, QR/takip kodlarının doğru görünmesini gerçek kullanıcıyla test et.
+- Misafir sipariş takip bağlantısını doğru anahtarla aç, yanlış anahtarı reddet; başka siparişin bilgileri sızmasın.
+- Mobilde forma stüdyosu, müşteri paneli, admin, üretim föyü ve kargo ekranlarını farklı ekran boyutlarında test et.
+- Kamera QR okutma akışını mümkünse gerçek cihazda doğrula; erişim yoksa dürüstçe raporla, manuel kod girişini koru.
+- Müşteri profilinde e-posta/SMS bildirim izinlerini yönetme ekranını tamamla. Gerçek gönderim yapma.
+
+2. TASARIM STÜDYOSU KALİTE DENETİMİ
+- 30 hazır şablonun gerçekten farklı görünmesini kontrol et.
+- Ön, arka, yan, detay, tam takım ve kadro görünümlerinin seçilen tasarımla tutarlı olmasını sağla.
+- Logo ve sponsorları sürükleme, boyutlandırma, döndürme, kopyalama, kilitleme, gizleme, hizalama, katman sırası işlemlerini masaüstü ve mobilde test et.
+- Ön ve arka yüzde öğeler birbirine karışmasın.
+- Oyuncu seçilince isim/numara ve beden bilgileri doğru güncellensin.
+- Kaleci için bağımsız forma modeli, renk ve desen çalışsın.
+- Şort tasarımı ve forma+şort önizlemesi tutarlı olsun.
+- Geri al/ileri al ve tasarım kaydet/aç/kopyala/paylaş işlemlerini test et.
+- PNG indirmede isim, numara, kontur, font, sponsor ve logo konumları önizlemeyle aynı olsun.
+- Hataları düzelt; çalışan özellikleri gereksiz yeniden yazma.
+
+3. GELİŞMİŞ TASARIM ARAÇLARI
+- Seçili öğe için net tutamaçlar, ölçü ve konum göstergeleri, hassas hareket, ortalama ve hizalama kılavuzları.
+- Mobilde iki parmakla yakınlaştırma ve öğeyi yanlışlıkla hareket ettirmeden önizleme gezinmesi.
+- Tasarım baskı güvenli alanı görünür olsun, alan dışına taşma uyarısı ver.
+- Renk paletleri, son kullanılan renkler ve renk kombinasyonlarını kaydetme.
+- Kullanıcıya karmaşık gelmeyecek şekilde düzenle.
+
+4. TAKIM VE KADRO AKIŞI
+- Kayıtlı takım seçimi kadroyu doldursun.
+- Oyuncu ekle/düzenle/sil, forma numarası tekrarı uyarısı, beden doğrulaması.
+- Toplu oyuncu girişi ve CSV içe aktarma; örnek CSV şablonu indir.
+- Aynı tasarımın oyuncu bazlı önizlemelerini göster.
+- İç saha, deplasman ve kaleci tasarımlarını takım hesabında ayrı sakla.
+- Kadro değiştiğinde geçmiş siparişlerin kayıtlı kadrosu değişmesin.
+
+5. SİPARİŞ VE TEKLİF KALİTESİ
+- Sipariş öncesi kontrol ekranında tüm oyuncular, bedenler, şort/kaleci, ön/arka görseller ve seçilen opsiyonlar eksiksiz olsun.
+- Misafir ve üyeli siparişleri test et.
+- Teklif oluştur → yönetici teklif hazırla → müşteri kabul et → siparişe dönüştür akışını test et.
+- Müşteri tasarım onayı/revizyonu ve üretim kilidi çalışsın.
+- Sipariş oluştururken istemciden gelen fiyat toplamına körü körüne güvenme; mevcut fiyat kurallarıyla sunucu tarafında yeniden doğrula. Bu bir güvenlik gereğidir; fiyatları değiştirme, ödeme entegrasyonu kurma.
+- Tekrar sipariş akışı ekle: geçmiş siparişten yeni tasarım/sipariş taslağı oluştur, eski siparişi değiştirme.
+
+6. ÜRETİM PANELİ
+- İş emri listesi, durumlar, görevli, öncelik, termin tarihi, gecikme, notlar.
+- Üretim föyü: ön/arka/şort/kaleci görselleri, renk kodları, baskı alanları, logo/sponsor kaynak dosyaları, kadro/beden/adet, müşteri onay sürümü.
+- Baskı önizlemesi ile baskıya hazır üretim dosyası arasındaki farkı açık göster.
+- Henüz gerçek üretici kalıpları olmadığı için “otomatik baskıya hazır vektör çıktı” iddiasında bulunma. Bunun yerine üreticiye gönderilebilecek düzenli tasarım paketi hazırla: kaynak görseller, yerleşim/ölçü/renk bilgileri, kadro CSV ve föy PDF. Eksik kaynak varsa uyar.
+- Üretim dosyalarını sipariş sürümüne bağla.
+
+7. ADMİN KULLANILABİLİRLİĞİ
+- Sipariş, teklif, müşteri, tasarım, şablon, iş emri ve paket ekranlarında tutarlı arama/filtre/sıralama.
+- Toplu işlem gerekiyorsa güvenli seçim ve onay.
+- İşlem geçmişi okunabilir olsun.
+- Kritik işlemlerde açıklayıcı onay pencereleri kullan.
+- Mobilde tablolar taşmasın; uygun kart/listeler kullan.
+
+8. BİLDİRİM VE AYARLAR
+- Panel içi bildirimler gerçek olaylardan oluşsun.
+- E-posta/SMS/WhatsApp gerçek sağlayıcı bağlanmadığı için kapalı kalsın; “gönderildi” gösterme.
+- Geçici marka/telefon/e-posta/fiyat bilgilerini değiştirmeden bırak.
+- Yönetici ayar ekranlarında hangi entegrasyonların daha sonra bağlanacağı açık olsun.
+
+9. GÜVENLİK VE VERİ BÜTÜNLÜĞÜ
+- V4'te kaldırılan herkese açık Süper Yönetici ol yolunu geri getirme.
+- Test hesabı dahil mevcut yetkileri izinsiz değiştirme.
+- Müşteri sadece kendi tasarım, sipariş ve tekliflerini görebilsin.
+- Admin rolleri sunucu/veritabanı düzeyinde korunsun.
+- Test ödemeleri gerçek tahsilata dahil edilmesin.
+- Deneme kayıtlarını otomatik silme.
+
+10. TEST VE SON RAPOR
+Gerçek tarayıcı testleriyle en az şu akışları dene: misafir tasarım/sipariş/takip, üye tasarım kaydet/aç, takım kadrosu içe aktarma, logo ve sponsor düzenleme, PNG indirme, tekliften sipariş, müşteri onayı, üretim iş emri, QR, çoklu kargo paketi, müşteri paket görünümü, yönetici rol kısıtları ve mobil stüdyo.
+
+V5 sonunda şu başlıklarla kısa ve somut rapor ver:
+- Gerçekten tamamlananlar
+- Tarayıcıda test edilip çalışanlar
+- Test edilemeyenler
+- Bulunan ve düzeltilen hatalar
+- Canlıya almadan önce beklemesi gereken dış servisler
+- V6 için yalnızca gerekli öneriler
+
+AMAÇ: Şu anda satışa başlamak değil; FormaLab'ı tasarım, müşteri, sipariş, teklif, üretim ve yönetim süreçleri bakımından eksiksiz bir deneme sistemine dönüştürmek. Fiyatlara, gerçek ödeme sağlayıcısına veya canlı entegrasyonlara odaklanma.
