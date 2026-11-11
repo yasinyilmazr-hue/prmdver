@@ -1,0 +1,91 @@
+FORMALAB V4 — GÜVENLİK, ÖDEME HAZIRLIĞI, BİLDİRİMLER VE ÜRETİM OPERASYONU
+
+Mevcut FormaLab V1, V2 ve V3 uygulamasını geliştir. Bu sıfırdan kurulum değildir. Çalışan tasarım stüdyosu, siparişler, teklifler, fiyatlar, müşteri hesapları, yönetim paneli, iş emirleri ve kayıtlı veriler kesinlikle korunacak. Özellikleri gerçekten çalışır hale getir; sahte başarılı işlem veya çalışmayan buton gösterme.
+
+ÖNCELİK 0 — KRİTİK GÜVENLİK DENETİMİ
+V3 raporunda /admin açılışında tek tıkla “Süper Yönetici ol” ekranının çıktığı ve formalab.v2.test@mailinator.com test hesabının Süper Yönetici olduğu belirtiliyor. Bu riskli bir kurulum akışı olabilir. Derhal incele:
+- Süper Yönetici ataması yalnızca güvenli, tek seferlik, sunucu tarafında doğrulanan sahiplik süreciyle yapılmalı. Herhangi bir kayıtlı kullanıcı kendini yönetici yapamamalı.
+- Kurulum tamamlandıktan sonra bu atama yolu sunucu/veritabanı düzeyinde kapalı olmalı; yalnızca arayüzü gizlemek yeterli değildir.
+- Mevcut Süper Yönetici hesabını ve izinleri denetle. Test hesabının ayrıcalıklarını kendiliğinden silme veya rastgele başka hesaba devretme. Güvenli devir için mevcut yetkili yöneticinin onayını ve gerçek hesap bilgisini iste.
+- İkinci, sıradan bir test hesabıyla /admin, sipariş, müşteri verisi, ödeme kaydı, rol değiştirme ve doğrudan veri erişimi yetkilerini test et. Yönetici dışındaki kullanıcılar bu verilere erişememeli.
+- Roller için en az yetki ilkesi uygula. Yetki kontrolü hem arayüzde hem sunucu/veritabanında çalışmalı. Ödeme, fiyat, yetki ve üretim onayı değişikliklerini denetim kaydına yaz.
+- V3'te FL-1002 üzerine girilen 5.000 TL ödeme kaydının TEST olduğunu doğrula. Gerçek tahsilat değilse test kaydı olarak açıkça işaretle; finansal raporlarda gerçek tahsilat gibi sayma. Geçmişi otomatik silme.
+
+1 — ONLINE ÖDEME MODÜLÜ
+Yönetim panelinde Ödeme Ayarları oluştur. Ödeme sağlayıcısı henüz belirtilmediğinden herhangi bir sağlayıcıyı aktifmiş gibi gösterme. PayTR/iyzico vb. için sağlayıcı seçimi ve güvenli kurulum alanları tasarla; gerçek entegrasyonu yalnızca kullanıcı sağlayıcıyı seçip gerekli erişim bilgilerini güvenli şekilde tanımladıktan sonra tamamla.
+- Kart verilerini uygulama içinde tutma; sağlayıcının güvenli ödeme sayfası/bileşenini kullan.
+- Sunucu tarafında sipariş tutarı doğrulaması, imzalı bildirim doğrulaması, mükerrer ödeme önleme, işlem kimliği, başarısız/iptal/iade durumları ve tekrar deneme akışı.
+- Kullanıcıya ödeme başarılı bilgisi ancak sağlayıcı tarafından doğrulandıktan sonra gösterilsin.
+- Havale/EFT ve manuel ödeme onayı mevcut haliyle çalışmaya devam etsin.
+- Kısmi ödeme, kapora, kalan bakiye ve ödeme geçmişi doğru hesaplansın.
+- Fiyat ve indirimler sipariş oluşturulduğu andaki değerleriyle sabitlensin.
+- Sağlayıcı bilgileri yoksa çalışır havale akışını koru ve entegrasyonu “kurulum bekliyor” olarak raporla.
+
+2 — MÜŞTERİ E-POSTA BİLDİRİMLERİ
+Şablonlar: üyelik doğrulama (mevcut akışı koru), sipariş alındı, teklif gönderildi, teklif kabul edildi, tasarım onayı istendi, revizyon istendi, ödeme onaylandı, üretime alındı, kargoya verildi, teslim edildi.
+- Yönetim panelinde bildirim şablonları, marka kimliği ve aç/kapat ayarları.
+- Mesajda sipariş numarası, durum, müşteri adı ve güvenli takip bağlantısı yer alsın.
+- Gerçek e-posta servisi yapılandırılmamışsa gönderim yapılmış gibi gösterme; “servis yapılandırılmadı” yaz.
+- Aynı olay için tekrar tekrar mesaj gönderimini engelle; hata ve gönderim kayıtlarını tut.
+- Müşteri iletişim tercihleri ve gerekli onayları dikkate al.
+
+3 — SMS VE WHATSAPP HAZIRLIĞI
+SMS sağlayıcısı henüz seçilmediği için hazır ayar ekranı, bildirim şablonları ve tetikleme noktaları oluştur; aktif entegrasyon varmış gibi gösterme. WhatsApp için mevcut iletişim butonunu koru. Otomatik mesaj gönderimini açık müşteri izni ve uygun resmi entegrasyon olmadan devreye alma.
+
+4 — KARGO OPERASYONU
+Mevcut manuel kargo firması/takip numarası girişini koru.
+- Kargo hazırlama listesi, gönderi paketleri, firma, takip numarası, gönderim tarihi, teslim notu.
+- Takip numarası müşteri hesabında görünmeli.
+- Yönetici kargo etiketini yazdırabilsin; barkod/QR siparişe ve paket kimliğine bağlansın.
+- Gerçek kargo API bağlantısı için sağlayıcı ayarları hazırla, firma/erişim bilgileri olmadan canlı hareket uydurma.
+- Bir sipariş birden fazla pakete bölünebilsin; her paket ayrı takip edilsin.
+
+5 — ÜRETİM İŞ EMRİ QR/BARKOD
+Her üretim iş emrine benzersiz kimlik ver. Üretim föyünde sipariş numarası, iş emri numarası ve taranabilir QR/barkod bulunsun.
+- QR açıldığında yetkili personel ilgili iş emrinin güvenli detay ekranına gitsin; müşteri verilerini halka açık hale getirme.
+- Baskı hazırlığı, üretim, kalite kontrol, paketleme adımlarında okutma ile durum güncellenebilsin.
+- İş emri ekranında görevli, tarih, not, gecikme ve işlem geçmişi olsun.
+- QR tarama mobil kamerada çalışsın; izin verilmezse manuel kod girişi sun.
+
+6 — ÜRETİM FÖYÜ KALİTESİ
+Ön/arka forma, şort ve kaleci tasarımları; renk kodları; logo/sponsor dosyaları; baskı konumları; oyuncu adı, numara, beden ve adetleri; toplam adet ve üretim notları eksiksiz göster.
+- PDF yazdırma ve kadro CSV dışa aktarma mevcut özelliklerini koru.
+- Gerçek baskı kalitesi kontrolü ekle: düşük çözünürlük, eksik dosya, baskı sınırı dışına taşma uyarıları.
+- Önizleme görselini baskıya hazır vektör dosyası diye sunma. Baskı dosyası üretilemiyorsa açıkça belirt.
+- Üretim föyünde son müşteri onay tarihi ve tasarım sürümü yer alsın.
+
+7 — MÜŞTERİ ONAYI VE ÜRETİM KİLİDİ
+Müşteri tasarım onayı vermeden üretime geçişi kısıtla; yetkili istisna işlemi varsa gerekçe ve kayıt zorunlu olsun.
+- Onaylanan tasarım sürümünü sabitle.
+- Değişiklik olursa yeniden müşteri onayı iste.
+- Onay, revizyon ve geçmiş sürümler görünür olsun.
+
+8 — RAPORLAR VE FİNANS DOĞRULUĞU
+Sipariş tutarı, tahsil edilen ödeme, kapora, kalan bakiye, iptal/iade ve test işlemlerini ayrı hesapla.
+- Test ödeme kayıtları gerçek ciro/tahsilat raporlarını şişirmesin.
+- Tarih, durum, model, müşteri ve takım filtreleri.
+- Dışa aktarım CSV.
+- Sipariş geçmişi ile finansal kayıtlar çelişmesin.
+
+9 — SİTE VE MÜŞTERİ DENEYİMİ
+- Misafir siparişine verilen FL numarası başarı ekranında görünmeye devam etsin.
+- Misafir sipariş takibi için yalnızca kolay tahmin edilebilir FL numarasına güvenme; ek doğrulama veya güvenli tek kullanımlık/özel bağlantı kullan.
+- Müşterinin kendi sipariş, teklif ve tasarımlarına erişim yetkilerini test et.
+- Mobil tasarım stüdyosunda WhatsApp butonunun araçları kapatmaması devam etsin.
+- Ön/arka PNG indirmede font, kontur ve konum uyumunu koru.
+- Mevcut şablonlar, takım kadrosu ve kaydedilen tasarımlar bozulmasın.
+
+10 — TEST PLANI VE TESLİM RAPORU
+Tarayıcıda uçtan uca test et:
+A) Yetkisiz yeni hesapla admin ve doğrudan veri erişimi engelleniyor mu?
+B) Mevcut yönetici rolü ve siparişler korunuyor mu?
+C) Test ödeme ile gerçek ödeme ayrımı doğru mu?
+D) Havale ve manuel ödeme mevcut haliyle çalışıyor mu?
+E) Bildirim servisi yokken sahte “gönderildi” durumu oluşmuyor mu?
+F) Üretim föyünde QR/barkod var mı, okutunca yetkili ekrana açılıyor mu?
+G) Paket oluşturma ve müşteri takip görünümü çalışıyor mu?
+H) Onaylanmamış tasarımın üretime geçişi engelleniyor mu?
+I) Eski FL-1002 ve diğer siparişler açılıyor mu?
+J) Mobilde üretim ve müşteri ekranları kullanılabiliyor mu?
+
+Kritik güvenlik sorunlarını ilk sırada düzelt. Eksik dış servis bilgilerini uydurma; hangi bilgilerin kullanıcıdan beklendiğini açıkça listele. V4 sonunda “tamamlananlar / gerçekten test edilenler / test edilemeyenler / dış servis bekleyenler / V5 önerileri” raporu ver.
