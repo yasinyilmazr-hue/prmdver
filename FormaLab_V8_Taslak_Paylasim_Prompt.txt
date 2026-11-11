@@ -1,0 +1,86 @@
+FORMALAB V8 — TASLAK KAYDETME, ARKADAŞLARLA PAYLAŞMA VE TAKIM ONAYI
+
+Mevcut FormaLab V1–V7 sistemini koruyarak özellikle tasarım taslağını kaydetme ve arkadaşlarla paylaşma deneyimini geliştir. V2'den beri tasarım kaydetme ve salt okunur paylaşım bağlantısı mevcut; bunları yeniden sıfırdan yapma. Mevcut bağlantıları bozma. V7'nin modern, sade ve premium arayüzüyle uyumlu çalış.
+
+AMAÇ: Bir kullanıcı forma tasarlarken henüz sipariş vermeden taslağını kaydedebilsin, WhatsApp üzerinden takım arkadaşlarına gönderebilsin, arkadaşları giriş yapmadan ön/arka formayı ve oyuncu örneklerini görebilsin, görüş bildirebilsin. Tasarım sahibi geri bildirimlere göre düzenleyip son halini siparişe dönüştürebilsin.
+
+1. TASLAK KAYDETME
+- Stüdyoda görünür ama sade 'Taslağı Kaydet' ve 'Paylaş' butonları.
+- Tasarım adı ve isteğe bağlı takım adı belirleme.
+- Otomatik kaydetme durumu: Kaydediliyor / Kaydedildi / Kaydetme başarısız.
+- Taslaklarda tüm ön/arka öğeler, renkler, logolar, sponsorlar, şort, kaleci, kadro, font, konum ve katmanlar korunmalı.
+- Giriş yapmış kullanıcı taslağı hesabında cihazlar arasında açabilsin. Misafir kullanıcı için mevcut yerel kayıt korunmalı; hesap açınca kendi onayıyla hesabına aktarabilsin.
+- Taslağı kopyala, yeniden adlandır, düzenle, arşivle. Silme işlemi onay istesin.
+- Taslağın durumları: Taslak / Arkadaşlarla paylaşıldı / Görüş toplanıyor / Son tasarım / Siparişe dönüştü. Bunlar sipariş/üretim durumlarıyla karışmasın.
+
+2. PAYLAŞILABİLİR ÖNİZLEME SAYFASI
+- Tahmin edilmesi zor, paylaşılabilir bağlantı üret.
+- Linki açan kişi varsayılan olarak giriş yapmadan görüntüleyebilsin; orijinal tasarımı değiştiremesin.
+- Premium mobil öncelikli sayfada forma ön/arka geçişi, tam takım, seçili oyuncu örnekleri, renkler, takım adı ve isteğe bağlı açıklama göster.
+- Paylaşım sayfasında büyük ve hızlı yüklenen forma görseli, 'WhatsApp'ta Paylaş', 'Bağlantıyı Kopyala' ve 'Görsel İndir' seçenekleri.
+- Bağlantı önizlemesinde mümkünse tasarıma ait küçük görsel ve anlaşılır başlık göster; özel müşteri verilerini önizleme meta verilerine koyma.
+- Tasarımın gizli düzenleme verileri, müşteri adresi, telefon, ödeme ve sipariş detayları asla paylaşılmasın.
+- Tasarım sahibi bağlantıyı kapatabilsin, yeniden oluşturabilsin ve erişim durumunu görebilsin.
+- Eski salt okunur paylaşım bağlantıları çalışmaya devam etsin.
+
+3. ARKADAŞ GÖRÜŞÜ VE OYLAMA
+- Tasarım sahibi paylaşım için 'Sadece görüntüle' veya 'Yorum ve oy topla' seçebilsin.
+- Yorum açıkken arkadaşlar isim/takma ad ve kısa yorum bırakabilsin; isimsiz spamı önlemek için uygun sınır/koruma olsun.
+- Basit 'Beğendim / Değişiklik öneriyorum' geri bildirimi.
+- Yorumlar ve oylar tasarım sahibinin panelinde toplansın.
+- Tasarım sahibi yorumları gizleyebilsin/silebilsin ve geri bildirim toplamayı kapatabilsin.
+- Yorumlarda kişisel veri veya herkese açık müşteri bilgisi göstermemeye dikkat et.
+- Arkadaşların yorum/oy vermesi, tasarımın kendisini değiştirmesin.
+
+4. TAKIM İÇİ KARAR VERME
+- Kullanıcı bir taslağın 2–4 alternatif renk veya desen versiyonunu oluşturup tek karşılaştırma bağlantısıyla paylaşabilsin.
+- Arkadaşlar alternatifleri yan yana görüp favori versiyonuna oy verebilsin.
+- Tasarım sahibi toplam oyları ve yorumları görsün; hangi versiyonun seçildiğine kendisi karar versin.
+- Oylama sonucu otomatik sipariş oluşturmasın veya mevcut tasarımı değiştirmesin.
+
+5. TASLAĞI KOPYALAYARAK DÜZENLEME
+- Paylaşım sayfasında isteğe bağlı 'Bu tasarımdan kendi versiyonunu oluştur' butonu olsun.
+- Bu işlem orijinali değiştirmeden yeni bir kopya açsın; tasarım sahibi bu izni kapatabilsin.
+- Başkasının yüklediği özel logoları izinsiz herkese yeniden dağıtmamaya dikkat et; kopyalama izni kapalıysa kaynak dosyaları dışa aktarma.
+
+6. TASARIM SÜRÜMLERİ
+- Tasarım sahibi 'Yeni sürüm kaydet' diyebilsin.
+- Paylaşımda 'Güncel tasarımı göster' ve 'Bu sürümü sabitle' seçenekleri olsun.
+- Eski yorumların hangi sürüme ait olduğu belli olsun.
+- Siparişe dönüştürülen tasarımın onaylı sürümü korunmalı; sonraki taslak değişiklikleri geçmiş siparişi etkilemesin.
+
+7. TASARIMLARIM SAYFASI
+- Taslaklarım, Paylaşılanlar, Son Tasarımlar sekmeleri.
+- Kartlarda ön/arka küçük görsel, tasarım adı, son güncelleme, paylaşım durumu, yorum/oy sayısı.
+- Düzenle, Paylaş, Kopyala, Arşivle, Siparişe Devam Et.
+- Mobilde sade kartlar ve net tek ana eylem.
+- Çok fazla butonla kartları kalabalıklaştırma; ikincil işlemleri menüde topla.
+
+8. GÜVENLİK
+- Paylaşım linki tasarımın sadece izin verilen önizleme verilerini açsın.
+- Düzenleme, silme, sipariş, müşteri hesabı ve ödeme işlemleri link üzerinden yapılamasın.
+- Yorum/oy için spam, aşırı istek ve kötüye kullanım koruması.
+- Sahiplik ve erişim kuralları sunucu/veritabanı tarafında uygulansın.
+- Paylaşım kapatılınca eski bağlantı yetkisiz erişime açılmasın.
+- Mevcut admin rolleri ve V4'te kapatılan süper yönetici açığı korunmalı.
+
+9. TASARIM KALİTESİ
+- V7'nin premium UI/UX düzenini koru.
+- Stüdyoda paylaşım butonu üst araç çubuğunda kolay bulunsun.
+- Paylaş penceresi sade: bağlantı, WhatsApp, görsel, erişim ayarı.
+- Paylaşım sayfası arkadaşların telefondan açacağı düşünülerek tasarlansın.
+- Ağır animasyon, gereksiz kart ve karmaşık form kullanma.
+
+10. TEST SENARYOLARI
+A. Taslak oluştur → kaydet → hesabından başka oturumda aç; bütün öğeler korunsun.
+B. Paylaşım linkini gizli pencerede aç; ön/arka görünsün, düzenleme yapılamasın.
+C. WhatsApp paylaşımı doğru bağlantıyı içersin.
+D. Arkadaş yorum ve oy versin; tasarım sahibi sonuçları görsün.
+E. Linki kapat → eski link erişimi engellensin.
+F. Alternatif tasarımlar arasında oylama çalışsın.
+G. Kopya oluştur → orijinal değişmesin.
+H. Yeni sürüm kaydet → yorumlar doğru sürümle ilişkilensin.
+I. Taslağı siparişe dönüştür → sipariş sürümü sabit kalsın.
+J. 375px mobil paylaşım ekranı ve stüdyo butonları düzgün çalışsın.
+
+SON TALİMAT: Bu V8 yalnızca taslak/paylaşım/geri bildirim deneyimini geliştirsin. Canlı ödeme, SMS, e-posta, kargo entegrasyonu ve fiyat değişikliği yapma. Mevcut sipariş ve verileri silme. İş sonunda tamamlanan, tarayıcıda gerçekten test edilen ve eksik kalan özellikleri açıkça raporla.
