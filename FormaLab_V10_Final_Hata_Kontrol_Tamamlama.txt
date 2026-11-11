@@ -1,0 +1,52 @@
+FORMALAB V10 — SON TAMAMLAMA, HATA TEMİZLİĞİ VE UÇTAN UCA KALİTE KONTROLÜ
+
+Mevcut V10'un ana bölümü tamamlandı fakat eksik regresyon testleri ve yarım kalan sayfa revizyonları var. Bu görev yeni özellik geliştirmek değil, V10'u gerçekten bitirmek ve mevcut özelliklerdeki kullanıcıyı rahatsız eden hataları gidermektir. V1–V10 verilerini, siparişleri, taslakları, fiyat kurallarını, güvenlik ve üretim akışlarını koru. Gerçek ödeme/e-posta/SMS/kargo API kurma.
+
+EN ÖNEMLİ SOMUT HATA — LOGO EKLENİNCE ESKİ YAZI KALIYOR
+Kullanıcı forma üzerine logo eklediğinde altında/arkasında daha önce görünen 'SPONSOR' veya başka örnek yazı duruyor. Bu çok kötü bir deneyim. Sorunun kaynağını bul:
+- Varsayılan şablonun örnek 'SPONSOR', '10', 'LOGO' gibi placeholder yazıları gerçek tasarım katmanı mı, görsel mockup'a gömülü mü? Ayrıştır.
+- Örnek/placeholder içerik yalnızca editörde yol gösterici olarak gösterilsin; gerçek katman, kaydedilen tasarım, paylaşım, PNG, sipariş ve üretici ZIP dosyasına istenmeden dahil edilmesin.
+- Kullanıcı sponsor alanına logo yüklediğinde aynı alanın placeholder metni otomatik gizlensin veya gerçek sponsor öğesiyle değişsin. Üst üste binme olmasın.
+- Takım logosu ve sponsor logosu farklı alanlar: takım logosu eklenmesi kullanıcının bilerek eklediği gerçek sponsor metnini otomatik silmesin. Yalnızca aynı alanın örnek yazısını kaldır.
+- Kullanıcının bilinçli olarak yazdığı gerçek metin/logoları izinsiz silme. Alan çakışırsa anlaşılır düzenleme seçeneği sun.
+- Ön ve arka yüz, tüm sporlar, tüm şablonlar ve kolay/gelişmiş modda davranış tutarlı olsun.
+- Eski kayıtlı tasarımlarda placeholder yanlışlıkla gerçek katman olarak saklanmışsa veri kaybı olmadan uyumlu düzeltme yap; eski onaylı siparişlerin üretim sürümünü sessizce değiştirme.
+
+GENEL TASARIM STÜDYOSU HATA DENETİMİ
+- Logo/sponsor ekle, değiştir, kaldır, tekrar ekle; eski öğe kalıyor mu?
+- İsim/numara placeholder'ları gerçek oyuncu verisiyle doğru değişiyor mu? Boşsa sipariş görselinde örnek '10' görünmesin.
+- Şablon değiştirince hayalet yazılar, çift katman, taşan desen, yanlış renk ve kaymış öğeler var mı?
+- Kolay modda tek adımın kontrolleri, gelişmiş modda tam araçlar çalışıyor mu?
+- Ön/arka, tam takım, kaleci, basketbol, voleybol ve antrenman kesimlerinde öğeler doğru yerleşiyor mu?
+- Baskı güvenli alanı, katman kilidi, geri al/ileri al, zoom ve dokunmatik hareketleri gözden geçir.
+- Kaydet → kapat → yeniden aç → paylaş → PNG indir → sipariş önizlemesi → üretici ZIP aşamalarında aynı tasarım korunuyor mu?
+
+V10'DAN KALAN GÖRSEL İŞLER
+- Paylaşım sayfasını V10'un modern premium görsel diliyle tamamen uyumlu hale getir; ön/arka, oylama, yorum, alternatif ve izin ayarlarını koru.
+- Hesabım (tasarımlar, takımlar, siparişler, teklifler, profil) sayfalarını ferah, sade, tutarlı biçimde yenile.
+- Admin ekranlarını temiz, modern ve okunabilir hale getir; mevcut filtreler, toplu işlemler, CSV ve yetki kontrollerini bozma.
+- Tasarıma özel paylaşım linki önizleme görseli mümkünse gerçek tasarımdan üret; üretilemiyorsa genel görsel kullandığını açıkça raporla.
+- Ana sayfa hero, spor seçimi, kartlar ve tipografi 375/430/768/1440px ekranlarda görsel olarak kontrol edilsin.
+
+V10 REGRESYON TESTLERİNİ BİTİR — GERÇEK TARAYICI
+A) Spor seç → 5 adım → taslak kaydet → üye hesabından yeniden aç.
+B) Gelişmiş modda logo/sponsor sürükleme ve PNG indirme.
+C) WhatsApp paylaşım bağlantısı doğru tasarıma gidiyor mu?
+D) Paylaşımı kapat, eski bağlantıyı aç (reddedilmeli); bağlantıyı yenile (eskisi geçersiz).
+E) Kopyalama izni kapalıyken kopya engeli; sürüm kilidi; yorum ve oyların kaydı.
+F) Üye ve misafir siparişleri; teklif → kabul → sipariş; sunucu fiyat doğrulaması.
+G) Müşteri tasarım onayı/revizyonu → iş emri → üretim föyü ve ZIP.
+H) QR iş emri ve çoklu kargo paketlerinin müşteri hesabında görünmesi.
+I) İkinci sıradan müşteri hesabının admin/ödeme/başkasının siparişine erişememesi.
+J) FL-1002 eski onaylı kalıbı korunuyor mu?
+K) 'Tekrar sipariş ver' ve cihaz taslağını hesaba aktarma.
+L) Logo eklendiğinde örnek sponsor yazısının aynı alanda kalmaması; gerçek kullanıcı yazısının korunması.
+M) Mobil 375/430, tablet 768 ve masaüstü 1440'te stüdyo, paylaşım, sipariş, hesap ve admin.
+
+TESTLERDE DÜRÜSTLÜK
+Gerçek cihazla kamera QR veya iki parmak hareketi test edilemiyorsa 'test edilmedi' de. Test siparişleri ve kayıtlarını otomatik silme; TEST olarak işaretle. Başarılı otomatik testleri gerçek tarayıcı testleriyle karıştırma.
+
+SON KABUL KRİTERİ
+Kullanıcı formayı seçip logo eklediğinde arkada sahte örnek metin kalmayacak. Kullanıcı hiç teknik bilgi bilmeden sporunu seçip tasarlayabilecek, taslağını kaydedip arkadaşına gönderebilecek, sipariş verebilecek. Tasarım stüdyosu, paylaşım, Hesabım ve admin aynı modern dilde olacak. Mevcut güvenlik ve üretim işlevleri korunacak.
+
+Bu aşamada yeni özellik önerileriyle işi uzatma. Önce somut hataları düzelt, eksik V10 işlerini tamamla ve uçtan uca test et. Son raporda: düzeltilen hatalar, tamamlanan ekranlar, gerçekten test edilen akışlar, test edilemeyenler ve canlıya çıkmadan önce kalan dış servisler.
