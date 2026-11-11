@@ -1,0 +1,62 @@
+FORMALAB V3 — YÖNETİM PANELİ, SİPARİŞ, TEKLİF VE ÜRETİM YÖNETİMİ
+
+Bu görev mevcut FormaLab projesinin V3 geliştirmesidir. V1 ve V2'de çalışan tüm sayfaları, tasarım stüdyosunu, hesapları, kayıtlı tasarımları ve siparişleri koru. Sıfırdan proje kurma, verileri silme, mevcut işlevleri bozma.
+
+ÖNCELİK: Siparişlerin yönetici tarafından okunması, yönetilmesi ve üretime eksiksiz aktarılması. V3'te yönetim paneli ve operasyon akışı gerçekten çalışmalı; yalnızca görsel ekranlar oluşturma.
+
+1) YÖNETİCİ GİRİŞİ VE YETKİLER
+/admin altında güvenli yönetim paneli kur. Roller: Süper Yönetici, Yönetici, Üretim Sorumlusu, Destek. Yetkisiz kullanıcı yönetim verilerine erişemesin. İlk süper yöneticiyi güvenli şekilde atama süreci sun; e-posta veya şifreyi kod içine sabitleme. İşlem geçmişi ve kritik değişiklik kayıtları tut.
+
+2) DASHBOARD
+Bugünkü/yeni/toplam siparişler, bekleyen ödemeler, onay bekleyen tasarımlar, üretimdeki işler, tamamlananlar, teklifler, satış toplamları ve sipariş trendi. Gerçek sipariş verilerinden hesapla; sahte sayılar gösterme. Tarih filtreleri ve hızlı işlem bağlantıları ekle.
+
+3) SİPARİŞ YÖNETİMİ
+Mevcut FL-1001, FL-1002… numaralarını koru. Sipariş listesinde arama, durum, tarih, müşteri, takım, ödeme ve tutar filtreleri olsun. Detay sayfasında müşteri/teslimat/fatura bilgileri, oyuncu bazında isim-numara-beden-adet, forma önü/arkası, şort, kaleci, sponsorlar, logo dosyaları, fiyat kalemleri, notlar ve geçmiş işlemler görüntülensin. Siparişler kaybolmasın; misafir siparişleri de listelensin. Siparişe iç not ekle, durum değiştir, işlem geçmişini kaydet.
+
+4) SİPARİŞ DURUM AKIŞI
+Sipariş alındı → Ödeme bekleniyor → Ödeme onaylandı → Tasarım kontrolü → Müşteri onayı → Üretim sırası → Baskı hazırlığı → Üretimde → Kalite kontrol → Paketleme → Kargoda → Teslim edildi. İptal ve iade için ayrı durumlar. Durumlar yönetici tarafından değiştirilebilsin; müşteri panelindeki takip çizelgesi anında güncellensin. Uygunsuz ileri atlamalarda uyarı ve yetki kontrolü yap.
+
+5) ÖDEME YÖNETİMİ
+Havale/EFT, manuel ödeme onayı ve çevrimiçi ödeme için hazır yönetilebilir yapı. Ödeme bekliyor/kısmi ödendi/ödendi/iade edildi durumları. Tutar, tarih, yöntem, işlem referansı, dekont ve not alanları. Bir siparişe birden fazla ödeme kaydı eklenebilsin. Toplam ödenen ve kalan bakiye doğru hesaplansın. Gerçek ödeme sağlayıcısı bilgileri olmadan sahte tahsilat gerçekleştirme veya ödeme başarılı gösterme. Online ödeme entegrasyonu için panelde yapılandırma alanı hazırla; sağlayıcı bilgileri daha sonra girilecek.
+
+6) TASARIM KONTROLÜ VE ONAY
+Siparişin ön/arka görünümü ve bütün öğeleri incelenebilsin. Baskı güvenli alanı ve düşük çözünürlüklü logo uyarıları gösterilsin. Yönetici müşteriye onay talebi gönderebilsin. Müşteri onayla veya revizyon iste seçeneğini kullansın. Revizyon notları, sürümler ve zaman damgaları saklansın. Onaylanan tasarım üretim için sabitlensin; sonradan değişiklik olursa yeni onay gereksin.
+
+7) ÜRETİM YÖNETİMİ
+Üretim iş listesi oluştur. İş emri numarası, sipariş numarası, öncelik, hedef teslim tarihi, atanan sorumlu, aşama ve notlar. Siparişe ait forma modeli, kumaş, renkler, logolar, sponsorlar, oyuncu isim/numaraları, beden/adet dağılımı ve kaleci/şort detayları tek ekranda görünsün. Üretim aşamaları güncellenebilsin ve müşteri takip durumuyla tutarlı olsun.
+
+8) ÜRETİM FÖYÜ VE DOSYALAR
+Her sipariş için yazdırılabilir ve PDF olarak indirilebilir üretim föyü oluştur: ön/arka tasarım görselleri, takım adı, model, renk kodları, kumaş, oyuncu listesi, numaralar, bedenler, adetler, logo ve sponsor dosyaları, baskı konumları, üretim notları. Oyuncu/beden listesini Excel/CSV olarak dışarı aktar. Görsel önizlemeler ile gerçek tasarım verileri tutarlı olsun. Eksik ya da üretime uygun olmayan baskı dosyaları için uyarı göster; düşük çözünürlüklü önizlemeyi baskıya hazır vektör dosya gibi sunma.
+
+9) TEKLİF YÖNETİMİ
+Müşteri tasarım stüdyosundan tasarımını ekleyerek teklif isteyebilsin. Form: takım, yetkili, telefon, e-posta, adet, şehir, istenen tarih, açıklama. Yönetici teklifi açıp fiyat, iskonto, teslim süresi ve not eklesin; teklif gönderildi/beklemede/kabul/ret durumları olsun. Teklif geçmişi ve revizyonlar saklansın. Müşteri kabul edince teklif aynı tasarımla siparişe dönüşebilsin.
+
+10) FİYAT VE İNDİRİM AYARLARI
+Panelden futbol, basketbol, voleybol, kaleci ve antrenman forma fiyatları; isim, numara, sponsor, şort, çorap, uzun kol ek ücretleri; adet bazlı indirim kademeleri yönetilsin. V1 fiyatları ve 10+/20+/50+ indirimleri başlangıçta aynen koru. Değişiklikler yeni siparişlere uygulansın, geçmiş sipariş toplamları değişmesin. Fiyat hesaplama kuralları hem stüdyoda hem sipariş özetinde tutarlı olsun.
+
+11) MODEL VE ŞABLON YÖNETİMİ
+Mevcut 30 şablonu koru. Yönetici şablonları listeleyebilsin, aktif/pasif yapabilsin, sıralayabilsin, ad/kategori/önizleme değiştirebilsin ve yeni şablon ekleyebilsin. Forma modelleri, kumaşlar, bedenler ve opsiyonlar yönetilebilsin. Mevcut müşterilerin kaydedilmiş tasarımları şablon güncellemesi nedeniyle bozulmasın.
+
+12) MÜŞTERİ VE TAKIM YÖNETİMİ
+Müşterileri ve takımları listele; müşteri detayında siparişler, teklifler, tasarımlar, iletişim ve adresler göster. Yetkili kullanıcı not ekleyebilsin. Müşteri verilerini izinsiz değiştirme; hassas alanlara rol bazlı erişim uygula.
+
+13) KARGO VE TESLİMAT
+Kargo firması, takip numarası, gönderim tarihi ve teslim notu girilebilsin. Müşteri sipariş ekranında takip bilgisini görebilsin. Takip bağlantısı varsa kullanılabilsin; sahte kargo hareketleri üretme.
+
+14) İÇERİK VE SİTE AYARLARI
+FormaLab adı, logo, telefon, e-posta, adres, WhatsApp, sosyal medya, ana sayfa görselleri, SSS, referanslar, kategori metinleri ve temel SEO alanları panelden düzenlenebilsin. Şu anki +90 500 000 00 00 ve diğer iletişim bilgilerinin geçici olduğu panelde açıkça işaretlensin. Gerçek bilgiler verilmeden uydurma kurumsal bilgiler ekleme.
+
+15) BİLDİRİMLER
+Yeni sipariş, yeni teklif, tasarım onayı, revizyon ve durum değişikliği için panel içi bildirimler. E-posta gönderimi yapılandırılabiliyorsa gerçek gönderim; yapılandırılmamışsa gönderildi gibi gösterme. Müşteri bildirimleri gereksiz tekrar oluşturmasın.
+
+16) RAPORLAR
+Tarih bazlı sipariş, ciro, ürün türü, adet, beden dağılımı, ödeme durumu ve üretim aşaması raporları. CSV/Excel dışa aktarım. İade ve iptalleri doğru ayrıştır; tahsilat ile sipariş tutarını karıştırma.
+
+17) V2'DEN KALAN KONTROLLER
+Misafir siparişinde FL numarasını başarı ekranında açıkça göster. İndirilen görsellerde seçilen oyuncu adı/numara fontu, kontur ve konumun önizlemeyle aynı olduğunu test et; sorun varsa düzelt. Logo, sponsor, şort, kaleci ve katman özelliklerinin sipariş detayında doğru korunduğunu doğrula. Mevcut test hesabı ve siparişleri otomatik silme.
+
+18) TEST SENARYOLARI
+Mevcut FL-1002 siparişini panelde bul. Yeni sipariş oluştur ve yönetici ekranında aç. Ödeme bekliyor → manuel onay → tasarım onayı → üretim → kargo akışını test et. Üretim föyünü PDF, kadroyu Excel/CSV indir. Fiyat kademesini değiştirip yeni siparişte güncellendiğini ve eski siparişte değişmediğini doğrula. Yeni şablon ekle; kayıtlı eski tasarımı tekrar aç. Müşteri rolüyle /admin erişiminin engellendiğini kontrol et. Masaüstü ve mobil paneli test et.
+
+SON TALİMAT
+Önce çalışan V1/V2'yi incele, sonra V3'ü tamamla. Sahte buton, örnek sipariş sayıları veya çalışmayan aksiyon bırakma. Mevcut verileri koru. Online ödeme için gerçek sağlayıcı bilgisi eksikse entegrasyonu tamamlanmış gibi gösterme. İş bitince yapılanlar, tarayıcıda gerçekten test edilenler, test edilmeyenler, eksikler ve V4'e önerileri ayrı raporla.
