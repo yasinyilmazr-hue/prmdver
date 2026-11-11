@@ -1,0 +1,94 @@
+FORMALAB V6 — EKSİKLERİ TAMAMLAMA, YÖNETİM PANELİ UX VE REGRESYON TESTLERİ
+
+Mevcut FormaLab V1–V5 projesini geliştir. Bu sıfırdan kurulum değildir. Site hâlâ test aşamasında; canlı ödeme, e-posta, SMS, kargo API ve gerçek fiyat belirleme işlerini bu sürümde yapma. Mevcut çalışan özellikleri, kullanıcılar, siparişler (FL-1001–FL-1005 dahil), tasarımlar, yönetici yetkileri ve güvenlik kontrolleri korunacak. Verileri silme.
+
+V5 raporunda açıkça tamamlanmadığı belirtilen işleri bu V6'da bitir. Yalnızca yeni arayüz çizmekle yetinme; gerçek kullanım ve tarayıcı testleri yap.
+
+1) 30 ŞABLONUN GÖRSEL VE İŞLEVSEL DENETİMİ
+- Mevcut 30 hazır forma şablonunu tek tek aç; gerçekten birbirinden farklı desen, yerleşim ve görünüm sunduğunu doğrula.
+- Aynı görünen veya yalnızca adı değişen şablonları tespit edip özgünleştir.
+- Her şablonda ana/ikincil/üçüncül renk alanları, ön/arka görünüm, kol ve yaka uyumunu test et.
+- Şablon değiştirildiğinde kullanıcı logosu, sponsoru, oyuncu bilgileri ve diğer özelleştirmeler beklenmedik şekilde silinmesin.
+- Şablon küçük görseli ile stüdyoda açılan sonuç uyumlu olsun.
+- Tasarım galerisindeki şablonlar da aynı veriyi kullansın.
+
+2) OYUNCU BAZLI ÖNİZLEME GALERİSİ
+- Kadrodaki her oyuncu için kendi ismi, numarası, bedeni ve seçili forma tasarımıyla ön/arka önizleme kartı göster.
+- Kaleci ayrı forma tasarımıyla gösterilsin.
+- Oyuncu kartına tıklanınca stüdyoda ilgili oyuncunun forması açılsın.
+- Çok sayıda oyuncuda arama, sıralama ve sayfalama/performans yönetimi olsun.
+- Eksik beden, tekrarlanan numara ve taşan yazı gibi sorunları kartlarda görünür uyarıyla göster.
+- Galeri ve sipariş özeti aynı oyuncu verilerini kullansın.
+
+3) ÜRETİM İŞ EMRİ LİSTESİ
+- İş emri no, sipariş no, takım, durum, görevli, öncelik, oluşturma tarihi ve termin tarihine göre arama/filtre/sıralama.
+- Geciken işler, bugün teslim edilecekler, onay bekleyenler için hızlı filtreler.
+- Durum değişikliği ve görevli atama mevcut yetki kontrollerini korusun.
+- Liste/kanban görünümü faydalıysa ekle; ancak temel filtreler tam çalışmadan görsel özelliklere zaman harcama.
+- İş emrinden üretim föyü, QR ekranı ve üretici ZIP paketine ulaşılabilsin.
+
+4) YÖNETİM PANELİNDE ORTAK LİSTE DENEYİMİ
+Aşağıdaki ekranların her birinde tutarlı arama, filtre, sıralama, boş durum, yükleniyor ve hata durumları oluştur:
+- Siparişler
+- Teklifler
+- Müşteriler
+- Takımlar
+- Tasarımlar
+- Şablonlar
+- İş emirleri
+- Kargo paketleri
+- Ödeme kayıtları
+- Bildirim geçmişi
+Her ekranın verisine uygun filtreler kullan. Liste sonuç sayısı ve filtreleri sıfırla seçeneği olsun. Filtrelerin gerçekten veriye uygulandığını test et. Kullanıcı filtrelerini ekranlar arasında karıştırma.
+
+5) GÜVENLİ TOPLU İŞLEMLER
+Uygun listelerde çoklu seçim ekle. Yalnızca mantıklı ve güvenli toplu işlemleri destekle: görevli atama, uygun aşamada durum güncelleme, CSV dışa aktarma, seçili kayıtlara etiket/not ekleme.
+- Ödeme onayı, para iadesi, rol verme, tasarım onayını atlama ve veri silme gibi kritik işlemler toplu tek tıkla yapılamasın.
+- Seçilen kayıt sayısı, etkilenecek siparişler ve olası hatalar işlem öncesinde gösterilsin.
+- Her kayıt için yetki, geçerli durum geçişi ve üretim onay kilidi sunucu tarafında denetlensin.
+- Kısmi başarısızlıkta hangi kayıtların güncellendiği net gösterilsin; işlem geçmişi tutulmaya devam etsin.
+
+6) MOBİL YÖNETİM PANELİ
+- Özellikle 375 px genişlikte tüm yönetim listelerini test et.
+- Geniş tablolar mobilde okunabilir kartlara veya kontrollü yatay kaydırmalı tablolara dönüşsün; butonlar ve filtreler taşmasın.
+- Sipariş detayı, ödeme kayıtları, teklif yönetimi, iş emirleri ve paket listesi telefonda kullanılabilsin.
+- Masaüstündeki kritik işlevler mobilde kaybolmasın.
+- Mobilde üretim QR ekranına erişim kolay olsun.
+
+7) V5'TE TEKRAR DENENMEYEN UÇTAN UCA AKIŞLAR
+Gerçek tarayıcıda şu testleri tekrar yap:
+A. Stüdyodan teklif iste → yönetici fiyat/iskonto belirle → müşteri kabul et → sipariş oluştur.
+B. Müşteri tasarım onayı/revizyonu → üretim kilidi → iş emri.
+C. Çoklu kargo paketi oluştur → müşterinin kendi hesabında paketleri görüntüle.
+D. Misafir siparişini doğru özel takip bağlantısıyla aç; yanlış bağlantıyı reddet.
+E. İkinci sıradan müşteri hesabıyla /admin ve doğrudan sipariş/ödeme/rol erişimlerinin engellendiğini doğrula.
+F. “Tekrar sipariş ver” butonuna tıkla; yeni taslak açıldığını ve eski siparişin değişmediğini kontrol et.
+G. CSV kadro içe aktarma, logo/sponsor taşıma, tasarım kaydet/aç, ön+arka PNG ve üretici ZIP çıktıları.
+H. Fiyat sunucu doğrulamasının hâlâ çalıştığını ve geçmiş sipariş fiyatlarının değişmediğini kontrol et.
+I. Üretim onay kilidi ve test ödeme kayıtlarının finans raporlarına dahil edilmemesi.
+J. Masaüstü ve mobil ekranlarda temel sipariş, stüdyo ve yönetim akışları.
+
+8) DOKUNMATİK VE QR
+- İki parmakla yakınlaştırma ve dokunarak sürükleme kodunu incele, çakışmaları düzelt; gerçek fiziksel cihaz erişimi yoksa test edildiğini iddia etme.
+- Kamera ile QR okuma için izin/hata/manuel giriş senaryolarını kontrol et. Gerçek cihaz yoksa bunu raporda açıkça belirt.
+
+9) VERİ VE GÜVENLİK
+- V4'te kapatılan herkese açık “Süper Yönetici ol” yolunu geri getirme.
+- Mevcut test yöneticisinin rolünü izinsiz değiştirme.
+- Kullanıcılar sadece kendi sipariş, teklif ve tasarımlarına erişsin.
+- Sipariş fiyatı sunucuda doğrulanmaya devam etsin.
+- Test ödemeleri gerçek tahsilat olarak raporlanmasın.
+- Mevcut deneme siparişlerini ve kayıtlarını silme.
+- Gerçek ödeme, SMS, e-posta veya kargo entegrasyonu kurma; mevcut “Bağlı değil” durumlarını koru.
+
+10) TAMAMLAMA KRİTERLERİ VE RAPOR
+V6'yı bitmiş saymadan önce 30 şablonun denetimini, oyuncu galerisini, iş emri filtrelerini, tüm admin liste filtrelerini, güvenli toplu işlemleri ve mobil liste deneyimini tamamla. Yarım kalanları gizleme.
+Raporu şu başlıklarla ver:
+- Tamamlanan özellikler
+- Tek tek test edilen ekranlar ve akışlar
+- Düzeltilen hatalar
+- Test edilemeyenler
+- Bilerek sonraya bırakılan canlı entegrasyonlar
+- V7 için yalnızca gerçekten gerekli öneriler
+
+HEDEF: Canlıya çıkmadan önce FormaLab'ın tasarım stüdyosu, takım/oyuncu deneyimi, sipariş, teklif, üretim ve yönetim süreçlerini profesyonel, tutarlı ve test edilmiş hale getirmek.
