@@ -50,3 +50,33 @@ Futbol, kaleci, basketbol, voleybol, antrenman modellerini tek tek incele. Her m
 
 SON TALİMAT
 Bu bir FRONTEND/MOCKUP REVİZYONUDUR. Forma tasarımının uzun, dar ve yapay görünümünü düzelt; modern, dengeli ve gerçekçi spor forması silueti elde et. Mevcut fonksiyonları ve verileri koru. Yapılanları, önce/sonra görsellerini, gerçekten test edilenleri ve kalan sorunları raporla.
+
+8. ÇOK KOLAY TASARIM DENEYİMİ — BİRİNCİ ÖNCELİK
+Bu siteyi bilgisayar kullanmayı az bilen bir müşteri bile yardımsız kullanabilmeli. Mevcut stüdyo çok seçenekli ve zor görünüyor. Profesyonel özellikleri kaldırmadan ilk deneyimi radikal biçimde basitleştir.
+
+- İlk açılışta kullanıcıyı araçlar, katmanlar, ölçüler ve onlarca ayarla karşılaştırma. Büyük forma önizlemesi, kısa açıklama ve tek net 'Başla' butonu göster.
+- İki kullanım modu sun: varsayılan 'Kolay Tasarım' ve isteğe bağlı 'Gelişmiş Düzenleme'. Kullanıcı istediği zaman geçiş yapabilsin; geçişte hiçbir değişiklik kaybolmasın.
+- Kolay modda yalnızca 5 anlaşılır adım: (1) Model seç, (2) Renk/desen seç, (3) Logo veya yazı ekle, (4) Oyuncuları ekle, (5) Kontrol et ve siparişe devam et.
+- Her adımda yalnızca o işe ait en önemli 2–5 kontrol görünmeli. 'Devam' ve 'Geri' butonları sabit ve anlaşılır olsun; ilerleme göstergesi kısa ve net olsun.
+- 30 şablonu birden yığma; önce 6–8 popüler tasarım göster, 'Diğer modeller' ile tamamına eriş.
+- Renk seçiminde hazır uyumlu kombinasyonları öne çıkar. Özel renk kodu, ayrı bölge ayarı ve gelişmiş kontroller isteğe bağlı açılır alanda olsun.
+- Logo yüklenince otomatik uygun göğüs konumuna yerleştir; kullanıcı isterse taşısın. 'Logom yok' seçeneği olsun; logosuz devam edilebilsin.
+- Sponsor, katman, koordinat, döndürme, kontur, baskı güvenli alanı gibi ayrıntılar varsayılan kolay modda görünmesin; gelişmiş modda eksiksiz kalsın.
+- Oyuncu eklemeyi basit satırlarla yap: İsim, Numara, Beden, '+ Oyuncu ekle'. CSV ve detaylı kadro özellikleri ikincil seçenek olsun. Tek forma siparişinde kadro zorunlu olmasın.
+- Zorunlu olmayan alanlarla kullanıcıyı durdurma. Hataları işlem yapılan yerde sade Türkçeyle açıkla: 'Bir oyuncunun bedeni eksik' gibi. Teknik terimler, kodlar ve karmaşık uyarılar gösterme.
+- Otomatik kaydetme ve taslak paylaşma devam etsin. 'Kaydedildi' durumu görünür olsun; kaydetme başarısızsa anlaşılır yeniden dene seçeneği sun.
+- Son ekranda forma önü/arkası büyük görünsün; oyuncu listesi ve seçimler kısa bir özet halinde olsun. 'Düzenle' bağlantıları ilgili adıma dönsün.
+- Yeni kullanıcı için kısa isteğe bağlı yardım ipuçları ve anlaşılır boş durumlar ekle; zorunlu uzun tur veya açılır pencere zinciri yapma.
+- Mobilde tek elle kullanılabilen büyük dokunma hedefleri, alt tarafta sabit 'Devam' ve kolay açılan renk/model seçenekleri olsun. Klavye açılınca butonlar ve forma önizlemesi birbirini kapatmasın.
+- Kolay moddan gelişmiş moda geçişte ve geri dönüşte renkler, desenler, logolar, sponsorlar, oyuncular ve kayıtlı taslak aynen korunsun.
+- Kullanıcıyı siparişe zorlamadan taslak kaydetme ve WhatsApp ile arkadaşına gönderme seçenekleri açıkça bulunmalı.
+
+9. KULLANILABİLİRLİK TESTİ
+Şu senaryoyu ilk kez gelen ve teknik bilgisi olmayan biri için değerlendir: Hazır model seç → iki renk belirle → logo yükle (veya atla) → üç oyuncu ekle → ön/arka kontrol et → taslak kaydet → arkadaşına gönder. Her aşamada nereden devam edeceği açık mı? Gereksiz tıklama, fazla alan veya anlaşılmayan terim var mı? Bulduklarını sadeleştir.
+- 375px ve 430px mobilde kolay modun bütün 5 adımını test et.
+- Gelişmiş modda mevcut bütün düzenleme araçlarının çalıştığını doğrula.
+- Önce/sonra ekran görüntülerini hem forma oranları hem stüdyo karmaşıklığı açısından karşılaştır.
+- Var olan V8 paylaşım, oylama, sürümleme ve sipariş özelliklerini bozma.
+
+SON HEDEF GÜNCELLEMESİ
+İki eşit öncelik var: (A) Uzun/dar forma kalıbını gerçekçi oranlara getirmek; (B) bilgisayar bilmeyen birinin bile birkaç dakikada forma hazırlayabileceği son derece basit, adım adım tasarım deneyimi. Karmaşık özellikleri kaldırma, sadece gelişmiş moda taşı. Yeni entegrasyon ekleme.
