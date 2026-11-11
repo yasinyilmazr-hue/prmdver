@@ -1,0 +1,62 @@
+FORMALAB V11.1 — TAKIM ARMASI VE SPONSOR LOGOSUNU AYIR + KALAN AKIŞLARI TAMAMLA
+
+Mevcut FormaLab V1–V11 özelliklerini ve kayıtlı verileri koru. V11 otomatik tasarım motorunda önemli bir kavram hatası var: tek 'Logo yükle' alanı yeterli değil. TAKIM ARMASI ile SPONSOR LOGOSU farklı şeylerdir ve bağımsız yönetilmelidir. Bu sürümde önce bu ayrımı düzelt, sonra V11 ve V10'dan kalan işleri bitir. Canlı ödeme, fiyat ve dış servis bağlantılarına dokunma.
+
+1. OTOMATİK TASARIM SİHİRBAZINDA AYRI ALANLAR
+Logo/renk adımını şöyle düzenle:
+A) 'Takım Arması' — isteğe bağlı dosya yükleme, varsayılan sol göğüs, sağ göğüs/orta gibi hazır konumlar. 'Armamız yok' ile atlanabilir.
+B) 'Sponsor Logosu' — isteğe bağlı ayrı dosya yükleme, varsayılan göğüs orta sponsor alanı. 'Sponsorumuz yok' ile atlanabilir.
+C) 'Ek Sponsor Ekle' — isteğe bağlı birden fazla sponsor: kol, sırt üstü/altı, şort gibi yerler.
+Takım arması sponsor gibi ortada kocaman görünmesin; sponsor da küçük takım arması alanına yanlış yerleşmesin. Kullanıcıya 'Takım arması' ve 'Sponsor logosu' diye açık anlat, teknik terim kullanma. İki alan da zorunlu olmasın. Kullanıcı yalnızca arma, yalnızca sponsor, ikisi birden veya hiçbirini yüklemeden devam edebilsin.
+
+2. OTOMATİK YERLEŞİM VE ÇAKIŞMA ÖNLEME
+- Takım armasını seçilen sporun uygun göğüs bölgesine, sponsor logosunu merkezi sponsor bölgesine otomatik yerleştir.
+- Her görselin oranını ve şeffaflığını koru, baskı güvenli alanını dikkate al.
+- İki görsel aynı bölgeye düşerse birbirine bindirme; uygun konum öner.
+- 'SPONSOR' gibi sahte metinler ekleme. Yalnızca kullanıcının gerçekten girdiği sponsor metni olsun.
+- Kullanıcının yazdığı gerçek metinleri otomatik silme; çakışmada anlaşılır uyarı ve seçim sun.
+- Öneri kartlarında ön/arka ve tam takım görünümünde arma ile sponsorlar doğru yerleşsin.
+- Gelişmiş stüdyoda arma ve sponsor bağımsız katmanlar olarak düzenlenebilsin; ekleme, taşıma, silme ve değiştirme işlemleri birbirini etkilemesin.
+
+3. RENK ÇIKARMA
+'Renkleri logomdan öner' ifadesini 'Renkleri armamdan öner' olarak değiştir. Arma yoksa sponsor logosundan renk önerme seçeneği isteğe bağlı sun; sponsorun kurumsal renklerini takımın zorunlu renkleri yapma. Her durumda kullanıcı kendi renklerini seçebilsin. Logo yoksa hazır paletlerle devam edilsin.
+
+4. TAKIM ARMASI OLUŞTURMA (BASİT)
+'Armamız yok' seçeneği yanında isteğe bağlı 'Basit arma oluştur' akışı ekle: takım adı/kısaltması, birkaç hazır kalkan/daire şekli, 2 renk ve isteğe bağlı kuruluş yılı. Kullanıcı tek tıkla armayı tasarıma ekleyebilsin. Var olmayan yapay zekâ yeteneği iddia etme. Bu özellik ana akışı karmaşıklaştırmasın.
+
+5. SİPARİŞ VE ÜRETİM
+Sipariş özetinde, tasarım kaydında, paylaşımda ve üretici ZIP paketinde takım arması dosyası ve sponsor dosyaları ayrı isimlendirilip doğru konumlarla saklansın. Oyuncu ve kaleci tasarımlarında tutarlılık sağla. Onaylı eski siparişleri sessizce değiştirme. Önceden tek logo alanından kaydedilmiş V11 tasarımlarını bozmadan aç; eski öğenin türü güvenilir şekilde bilinmiyorsa otomatik yanlış sınıflandırma yapma, kullanıcıya türünü seçtirebil.
+
+6. V11 EKSİKLERİ
+- Hesabım'a 'Tasarım Taleplerim' sekmesi ekle. TD numarası, tarih, durum, tasarım önizlemesi, revizyon/onay ve güvenli takip bağlantısı görünsün.
+- Misafir talebi bağlantısı çalışmaya devam etsin; başka müşterinin verisi görünmesin.
+- Tasarım desteği: müşteri talep oluştur → admin gör/ata → tasarım bağlantısı gönder → müşteri onayla veya revizyon iste → talep durumu güncellensin. Gerçek tarayıcıda dene.
+- Otomatik öneri → stüdyo → oyuncu ekle → sipariş özeti → test siparişi akışını dene.
+- Üye olarak paylaş → arkadaş yorum/oy ver → tasarım sahibi sonuçları gör testini yap.
+- Voleybol ve kaleci önerilerini tarayıcıda dene.
+
+7. V10'DAN KALANLARI BİTİR
+- Paylaşım sayfasını ve Hesabım ekranlarını modern, ferah, premium görünümle yenile.
+- Tasarıma özel paylaşım önizleme görselini mümkünse doğru tasarım görselinden oluştur; mümkün değilse açıkça raporla.
+- Daha önce istenen A–M regresyon testlerini gerçekleştir; gerçekten denenmeyenleri belirt.
+- Logo, arma, sponsor, örnek SPONSOR/YILMAZ/10 yazıları ve baskı alanı çakışmalarını özellikle test et.
+
+8. KULLANIM KOLAYLIĞI
+Kullanıcı bilgisayar bilmeyebilir. Otomatik tasarımda ilk ekranda iki sade kart: 'Takım Arması (isteğe bağlı)' ve 'Sponsor Logosu (isteğe bağlı)'. Ek sponsorlar açılır ikincil bölümde olsun. Uzun teknik form ve gereksiz uyarı oluşturma. Mobil 375/430 ve masaüstü 1440'te önizlemeyi büyük ve net tut.
+
+9. TEST SENARYOLARI
+A) Sadece takım arması yükle → sol göğüste küçük arma, sponsor alanı boş.
+B) Sadece sponsor yükle → göğüste sponsor, arma alanı boş.
+C) İkisini yükle → doğru iki ayrı konum; çakışma yok.
+D) İkisi de yok → temiz forma, sahte metin yok.
+E) İki sponsor ekle → bağımsız katmanlar ve konumlar.
+F) Armadan renk öner → palet; arma yokken hazır palet.
+G) Arma oluştur → tasarıma ekle → kaydet/aç/paylaş.
+H) Öneri → stüdyo → sipariş → üretim föyü/ZIP; dosyalar doğru sınıflandırılmış.
+I) Tasarım desteği talebi → admin → müşteri revizyon/onay.
+J) Hesabım Tasarım Taleplerim ve misafir takip bağlantısı.
+K) Önceki V11 tasarımları ve eski FL-1002 onaylı siparişi bozulmasın.
+L) 375/430/768/1440 ekranlarda kontrol.
+
+SON TALİMAT
+Yeni karmaşık modüllerle odağı dağıtma. Öncelik takım arması/sponsor ayrımı ve otomatik yerleşimin doğru çalışmasıdır. Ardından V11/V10 eksiklerini kapat. Son raporda gerçekten tamamlananlar, tarayıcıda test edilenler, test edilemeyenler ve kalan kusurları açıkça belirt.
