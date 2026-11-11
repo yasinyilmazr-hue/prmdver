@@ -1,0 +1,81 @@
+FORMALAB V10 — SON KAPSAMLI UX, SPOR SEÇİMİ, VİTRİN TASARIMI VE KALİTE KONTROLÜ
+
+BU BİR SIFIRDAN YAPIM DEĞİL, MEVCUT FORMALAB PROJESİNİN SON KAPSAMLI REVİZYONUDUR.
+Mevcut V1–V9 işlevlerini, kayıtlı tasarımları, V8 taslak/paylaşım/oylama sistemini, siparişleri, yönetim panelini, fiyat kurallarını, güvenlik yetkilerini ve üretim kayıtlarını koru. Canlı ödeme, e-posta, SMS ve kargo API bağlama; fiyatları değiştirme. Kullanıcının temel şikayeti: Site hâlâ kaba, eski, kalabalık görünüyor; hero/slider ve arka plan kötü; yazılar çok büyük; spor seçimi yeterince önde değil. Öncelik kullanıcıya kolay ve premium bir deneyim.
+
+ÖNCE GERÇEK GÖRSEL DENETİM
+Canlı önizleme bağlantısı: https://pixel-perfect-replay-15235.lovable.app/
+Bu uygulamanın ana sayfasını, mobil görünümünü, forma stüdyosunu, hazır tasarımları, taslak paylaşım sayfasını, sipariş akışını ve hesabım ekranlarını kendi tarayıcında açıp ekran görüntüleriyle incele. Mevcut sorunları tespit et. Yalnızca kodu okuyarak tasarım güzel diye rapor verme. Bağlantıya erişemiyorsan bunu belirt, proje önizlemesi üzerinden incele.
+
+1. İLK ADIMDA SPOR TÜRÜ SEÇİMİ — ZORUNLU ÜRÜN KARARI
+Kullanıcı 'Formanı Tasarla' dediğinde ilk olarak büyük ve anlaşılır bir 'Hangi spor için tasarlıyorsun?' ekranı görmeli. Kartlar: Futbol / Halı Saha, Basketbol, Voleybol, Kaleci, Antrenman. Gerekirse diğer sporlar yönetim panelinden eklenebilir; şu an olmayan sporlar varmış gibi gösterme.
+Her kartta ilgili spora ait gerçekçi ve farklı forma silueti/önizlemesi, kısa açıklama ve 'Seç' eylemi olsun. Varsayılan olarak futbolu sessizce seçme. Kullanıcı isterse önceki taslağından devam etsin; kayıtlı taslağın sporu korunsun. Spor seçildikten sonra Kolay Tasarım'ın 5 adımı başlasın: Model/Kesim → Renk/Desen → Logo/Yazı → Oyuncular → Kontrol. Üstte spor değiştirilebilir ama spor değiştirince uyumsuz kesim ve öğeler için açık uyarı ve onay ver; veri kaybı olmasın.
+Spor türüne göre model, yaka, kol, numara yerleşimi, şort ve takım seçenekleri uyarlansın. Basketbol kolsuz ve basketbol kesimli, voleybol kendi sporuna uygun, futbol kısa/uzun kollu ve kaleci özel kesimli olsun. Voleybolu futbol siluetinin kopyası olarak bırakma. Her sporun ön/arka görünümleri ve tam takım oranları doğal olsun. Şablon filtreleri spor türüne göre doğru çalışsın. Tüm sporlar tek stüdyoda aynı kolay kullanım mantığını korusun.
+
+2. ANA SAYFA / HERO / SLIDER TAM YENİLEME
+Şu anki büyük kaba yazılar, kötü arka plan ve eski tip slider tasarımını kaldırıp yeniden tasarla. Modern, üst segment spor giyim ve kişiselleştirme platformu gibi görünmeli.
+- Hero'da temiz, dengeli tipografi: kısa güçlü başlık, tek cümle alt metin, belirgin 'Formanı Tasarla' CTA; ikinci eylem 'Modelleri İncele'.
+- Başlık masaüstünde dahi aşırı büyük ve kaba olmasın; satır kırılımları kontrollü olsun. Mobilde 2–3 satırı geçmemeye çalış.
+- Arka plan sade, açık, premium; ağır gradient, neon dolgu, dev yazı, bulanık görsel ve ucuz stok görünümünden kaçın.
+- Büyük, kaliteli ve doğal oranlı futbol/basketbol/voleybol forma sunumları kullan. Görsellerin kalitesi yetersizse bulanık şekilde büyütme.
+- Otomatik kayan, kullanıcıyı yoran klasik slider zorunlu değil. En iyi çözüm tek güçlü hero + spor kartları olabilir. Slider kullanılıyorsa az sayıda anlamlı slayt, kontrollü geçiş, okunaklı CTA, durdurma/manuel gezinme ve mobil uyum olmalı. Sırf slider istendi diye kötü carousel oluşturma.
+- Hero'nun hemen altında 'Sporunu seç' bölümü görünür olsun: Futbol, Basketbol, Voleybol, Kaleci, Antrenman. Her kart stüdyoya ilgili sporla götürsün.
+- Bölüm sırası sade: Hero → Spor seç → Nasıl çalışır (3 kısa adım) → Popüler tasarımlar → Takımlar için sipariş → SSS → Footer.
+- Gereksiz sayaçlar, 3D efektler, kalabalık kartlar ve tekrar eden CTA'lar ekleme.
+- Referans ve yorumlar gerçek değilse örnek oldukları açıkça belli olsun.
+
+3. PREMIUM TASARIM DİLİ
+- Beyaz/kırık beyaz ve çok açık nötr zemin, koyu antrasit metin, neon yeşil sadece önemli CTA/seçili durumlarda.
+- Tutarlı, zarif ve okunabilir yazı tipi; güçlü ama abartısız başlıklar. Gövde metinleri 14–17px aralığında okunabilir; mobilde rahat satır yüksekliği.
+- Daha fazla nefes alanı, dengeli içerik genişliği, tutarlı kart oranları ve ürün fotoğrafı ölçekleri.
+- Dev kalın çerçeveler, aşırı yuvarlatılmış kutular, çok sayıda rozet, parlak gölgeler ve gereksiz ikonları azalt.
+- Masaüstü menü ve mobil navigasyon modern ve kısa olsun.
+- Türkçe yazım ve etiketler tutarlı olsun; 'Forma Tasarla' eylemi her yerde aynı anlama gelsin.
+- Hafif ve hızlı animasyon; performansı bozma.
+
+4. KOLAY TASARIMIN DAHA DA SADELEŞMESİ
+- Spor seçimi bittikten sonra yeni kullanıcıya aynı anda yalnızca o adımın gerekli kontrollerini göster.
+- Adımlar ilerleme çubuğuyla net; büyük forma her zaman görünür.
+- Hazır desen/renk kombinasyonları ilk sırada, gelişmiş renk kodları gizli.
+- Logo yükle veya atla; otomatik doğru konuma yerleştir.
+- Oyuncu için sadece Ad/Numara/Beden; tek forma siparişinde takım kadrosu zorunlu değil.
+- Kullanıcı 'Kaydet ve sonra devam et' ve 'Arkadaşlarımla paylaş' seçeneklerini kolayca bulsun.
+- Gelişmiş modun tüm katman, sponsor, ölçü, döndürme ve baskı özellikleri korunsun; Kolay mod bunlarla dolmasın.
+- Önizleme ve araçlar 375/430/768/1440px ekranlarda dengeli olsun. Mobilde klavye ve alt CTA çakışmasın.
+
+5. FORMA MOCKUP KALİTESİ
+V9'da düzeltilen kısa/geniş futbol kalıbını koru. Diğer sporları kendi kesimlerine göre iyileştir. Forma görselini CSS ile gerip esnetme. Yaka, kol, gövde, etek, desen ve kumaş doğal olsun. Seçim çerçevesi/baskı çizgileri normal sunumda görünmesin. Ön/arka/tam takım ve oyuncu galerisi tutarlı olsun. Kayıtlı tasarımları ve onaylı eski sipariş kalıplarını bozma.
+
+6. PAYLAŞIM VE TASLAK DENEYİMİ
+V8'deki Taslağı Kaydet, Paylaş, WhatsApp, yorum, oylama, A–D alternatifleri, sürüm kilidi ve kopyalama izni korunmalı.
+- Paylaşım sayfası yeni premium görünümle uyumlu olsun.
+- Tasarıma özel paylaşım önizleme görseli mümkünse oluştur; mümkün değilse genel görsel kullanıldığını raporla, yanlış görsel gösterme.
+- Paylaşımı kapat → eski link erişilemesin; bağlantı yenile → eski link geçersiz olsun; kopyalama engeli ve sürüm kilidi çalışsın.
+- Giriş yapınca cihaz taslağını hesaba taşıma akışını test et.
+- Sipariş sonrası 'Siparişe dönüştü' durumu doğru görünsün.
+
+7. DİĞER SAYFALARDA GÖRSEL TUTARLILIK
+Hazır tasarımlar, Hesabım, Takımlarım, Siparişlerim, Tekliflerim, misafir takip, iletişim, SSS ve admin sayfaları aynı tasarım dilini kullansın. Admin ekranları işlevsel sade SaaS görünümünde kalsın; çalışan filtre, CSV, toplu işlem, rol ve iş emri özelliklerini bozma. Mobilde hiçbir bölüm taşmasın.
+
+8. EKSİK REGRESYON TESTLERİNİ BİTİR
+Gerçek tarayıcıda en az şu senaryoları test et:
+A. Ana sayfa → Futbol seç → 5 adım → taslak kaydet → tekrar aç.
+B. Ana sayfa → Basketbol seç → gerçekten basketbol kesimi ve uygun şablon.
+C. Voleybol seç → futboldan farklı uygun kesim.
+D. Kaleci ve antrenman seçenekleri.
+E. Gelişmiş modda logo sürükleme, ön/arka, PNG indirme.
+F. Taslak paylaşımı: doğru link, kapatma, yenileme, kopya izni, sürüm kilidi, yorum/oy.
+G. WhatsApp paylaşım bağlantısı (gerçek telefon yoksa açılan bağlantı formatını doğrula).
+H. Üyeli ve misafir sipariş; tekliften sipariş; sunucu fiyat doğrulaması.
+I. Tasarım onayı, üretim föyü, ZIP, QR ve müşteri paket takibi.
+J. İkinci normal müşteri hesabıyla admin erişim engeli.
+K. 375, 430, 768, 1440px ekranlar; ana sayfa, spor seçimi, stüdyo, paylaşım ve sipariş.
+L. Eski FL-1002 siparişi eski onaylı kalıpla kalıyor mu?
+Gerçek cihazla yapılamayan testleri yapıldı diye gösterme. Yeni test kayıtlarını silme; açıkça işaretle.
+
+9. SON TESLİM ŞARTI
+Bu kez 'ilk bölüm bitti, devam et' şeklinde yarım bırakma. Önce tüm sayfaları incele, sonra spor seçimini ve ana sayfa/hero revizyonunu uygula, sonra stüdyo ve diğer sayfaları tamamla, en sonunda regresyon testlerini yap. İş çok büyükse mevcut işi bozmadan kendi içinde aşamalara ayır ama tamamlanmayanları açıkça raporla. Özellikle kullanıcıya yeni teknoloji veya altyapı önerme; sadece çalışan uygulamayı bitir.
+Rapor: Önce/sonra görsel değişiklikler; spor bazında yapılanlar; gerçek tarayıcı testleri; test edilemeyenler; kalan kusurlar. Ana sayfanın ve stüdyonun 1440px ve 375px ekran görüntülerini karşılaştır.
+
+NİHAİ HEDEF
+FormaLab'a ilk defa gelen, bilgisayarı az bilen bir müşteri önce sporunu seçsin, sonra birkaç kolay adımda kaliteli ve gerçekçi forma tasarlasın, taslağını kaydetsin veya arkadaşlarıyla paylaşsın ve isterse sipariş oluştursun. Site modern, premium, sade, hızlı, sportif ve güven veren bir marka vitrini gibi görünsün. Hiçbir kritik mevcut özellik kaybolmasın.
