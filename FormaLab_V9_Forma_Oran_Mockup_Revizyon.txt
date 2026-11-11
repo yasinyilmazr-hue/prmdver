@@ -1,0 +1,52 @@
+FORMALAB V9 — FORMA ORANLARI VE MOCKUP GÖRÜNÜMÜ REVİZYONU
+
+Mevcut FormaLab V1–V8 sistemini koru. Kullanıcının paylaştığı ekran görüntüsündeki forma uzun, dar ve aşağı doğru gereğinden fazla uzamış görünüyor. Bu sürümde sadece forma görselleştirmesinin anatomik oranlarını, kesimini, kumaş hissini ve önizleme yerleşimini iyileştir. Yeni modül, fiyat veya ödeme entegrasyonu ekleme.
+
+1. ÖNCELİKLİ SORUN
+Forma gövdesi çok uzun ve ince; omuz/göğüs genişliğiyle boy oranı doğal değil. Alt etek düz, kesim sert, kollar ve yaka gövdeyle yeterince uyumlu görünmüyor. Kullanıcıya futbol forması yerine uzatılmış bir tunik izlenimi veriyor. Bu oranları profesyonel kısa kollu futbol forması siluetine yaklaştır.
+
+2. ORAN VE SİLUET
+- Omuz, göğüs, bel, etek, kol uzunluğu ve yaka oranlarını dengeli hale getir.
+- Gövdeyi görsel olarak kısalt; göğüs ve omuzları orantılı genişlet.
+- Hafif bel formu, doğal yan dikişler, gerçekçi kol açısı ve yaka geçişi oluştur.
+- Ön ve arka görünüm aynı temel kalıp oranlarını kullansın.
+- Forma modeline göre farklı kesimler (regular, slim, oversize) ayrı seçenek olarak kalabilir; varsayılan regular futbol forması olsun.
+- Tek bir sabit piksel ölçüsüne zorlamak yerine tutarlı bir normalize edilmiş koordinat sistemi kullan; masaüstü ve mobilde en-boy oranı bozulmasın.
+- Forma görselini CSS ile bağımsız yatay/dikey ölçekleyerek esnetme. Aspect ratio korunmalı.
+
+3. TASARIM ÖĞELERİ KORUNSUN
+- Mevcut 30 desen, renk bölgeleri, ön/arka yüz, sponsor, logo, isim, numara, katmanlar, baskı güvenli alanı ve sürükleme işlevleri çalışmaya devam etsin.
+- Gövde silueti değişince sponsor/logolar yanlış yere kaymasın; konumları yeni kalıba uygun dönüştür.
+- Baskı güvenli alanı yeni siluete göre yeniden hesaplanmalı; forma dışına taşmamalı.
+- Mevcut kayıtlı tasarımlar ve siparişler açıldığında öğeler kaybolmamalı; gerekiyorsa geriye uyumlu koordinat dönüşümü uygula.
+- Eski siparişlerin onaylanmış üretim dosyalarını sessizce değiştirme; yeni mockup gösterimiyle eski üretim sürümünü ayır.
+
+4. GÖRSEL KALİTE
+- Gerçekçi ama hafif kumaş dokusu, yumuşak doğal kıvrımlar, dikişler ve hafif gölgeler.
+- Fazla plastik, aşırı parlak veya karikatür görünümünden kaçın.
+- Yaka, kol ucu, omuz ve etek birleşimleri temiz olsun.
+- Desenler ve renkler forma yüzeyini doğru takip etsin; kesik, kaymış veya gövde dışına taşmış parçalar olmasın.
+- Önizleme bir ürün fotoğrafına yakın kaliteli dursun, fakat düzenlenebilirlik bozulmasın.
+- 3D altyapı zorunlu değil; önce yüksek kaliteli, oranları doğru 2D mockup elde et. Gerçekte olmayan 360 derece görünümü varmış gibi sunma.
+
+5. STÜDYO YERLEŞİMİ
+- Forma orta sahnede rahat boşlukla gösterilsin; ne çok küçük ne de ekranın altına taşacak kadar uzun olsun.
+- Ön/arka/tam takım geçişinde aynı ölçek hissi korunsun.
+- Seçili sponsorun düzenleme çerçevesi ve baskı kılavuzları yalnızca düzenleme sırasında belirgin olsun; normal önizleme modunda görünmesin.
+- 1440px, 768px, 430px ve 375px ekranlarda forma oranı aynı kalsın.
+
+6. MODEL BAZLI KONTROL
+Futbol, kaleci, basketbol, voleybol, antrenman modellerini tek tek incele. Her model kendi gerçek ürün tipine uygun oranlara sahip olsun; futbol forması düzeltmesi diğer modelleri bozmasın. Kısa/uzun kol ve yaka varyantları kontrol edilsin. Şort ile tam takım görünümü orantılı olsun.
+
+7. GÖRSEL KARŞILAŞTIRMA VE TEST
+Önce mevcut forma görünümünün ekran görüntüsünü al; ardından yeni görünümle yan yana karşılaştır. Özellikle kullanıcının gösterdiği siyah-neon yeşil, çapraz desenli forma üzerinden kontrol et: gövde artık fazla uzun ve dar görünmemeli. Logo, sponsor, 10 numara ve desen yeni siluette doğru yerleşmeli.
+Şunları test et:
+- Şablon değiştir, renk değiştir, ön/arka geç.
+- Logo ve sponsoru sürükle, kaydet, yeniden aç.
+- PNG ön/arka dışa aktarımını kontrol et.
+- Paylaşım sayfası, Tasarımlarım küçük görselleri ve sipariş önizlemesi yeni oranla tutarlı mı?
+- Üretim föyü ve ZIP eski onaylı siparişleri bozmuyor mu?
+- Masaüstü ve mobilde en-boy oranı korunuyor mu?
+
+SON TALİMAT
+Bu bir FRONTEND/MOCKUP REVİZYONUDUR. Forma tasarımının uzun, dar ve yapay görünümünü düzelt; modern, dengeli ve gerçekçi spor forması silueti elde et. Mevcut fonksiyonları ve verileri koru. Yapılanları, önce/sonra görsellerini, gerçekten test edilenleri ve kalan sorunları raporla.
