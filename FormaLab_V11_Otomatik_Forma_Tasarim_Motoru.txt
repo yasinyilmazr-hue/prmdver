@@ -1,0 +1,71 @@
+FORMALAB V11 — OTOMATİK FORMA TASARIM MOTORU (LOGONU YÜKLE, FORMAYI BİZ TASARLAYALIM)
+
+MEVCUT PROJEYİ KORU
+FormaLab V1–V10 özelliklerini, Kolay/Gelişmiş stüdyoyu, taslakları, paylaşımı, siparişleri, admin panelini ve güvenlik kurallarını koru. Bu yeni bir müşteri akışıdır; mevcut manuel tasarım seçeneklerini kaldırma. V10'da kalan hata düzeltmelerini de bozma. Canlı ödeme, fiyat ve dış servis entegrasyonlarıyla uğraşma.
+
+AMAÇ
+Bilgisayar kullanmayı bilmeyen müşteri bile birkaç bilgi girip takım logosunu yükleyerek hiçbir tasarım aracı kullanmadan otomatik hazırlanmış 3–6 kaliteli forma önerisi alabilsin. Kullanıcı beğendiğini seçip doğrudan siparişe devam edebilsin veya isterse stüdyoda düzenleyebilsin.
+
+1. İLK EKRANDA 3 NET SEÇENEK
+'Formanı Tasarla' sonrası:
+A) 'Ben Tasarlayacağım' — mevcut Kolay Tasarım.
+B) 'Benim İçin Tasarla' — YENİ otomatik motor, öne çıkan öneri.
+C) 'Taslağıma Devam Et' — varsa.
+Ardından spor seçimi: Futbol/Halı Saha, Basketbol, Voleybol, Kaleci, Antrenman. Spor seçimi atlanmasın. Ana sayfada 'Logonu Yükle, Formanı Hazırlayalım' CTA'sı da yeni akışı açsın.
+
+2. OTOMATİK TASARIM SİHİRBAZI — EN FAZLA 4 KISA ADIM
+ADIM 1 — TAKIM VE SPOR
+Spor, takım adı (isteğe bağlı), forma türü: iç saha/deplasman/kaleci (uygunsa).
+ADIM 2 — LOGO VE RENK
+Takım logosu yükle (PNG/JPG/SVG güvenli doğrulamayla); 'Logom yok' ile geçilebilsin. Ana renk ve ikinci renk seçimi opsiyonel olsun. 'Renkleri logomdan öner' seçeneği olsun. Logo renklerinden otomatik palet öner; sonuç kötü ise hazır paletlere dön. Şeffaf arka planı koru. Logo yoksa kaliteli hazır paletlerden ilerle.
+ADIM 3 — TARZ
+En fazla 4 anlaşılır kart: Sade, Modern, Cesur, Klasik. İsteğe bağlı 'Sürpriz yap' butonu. Kullanıcıyı yaka, kol, koordinat, sponsor, katman gibi teknik ayrıntılarla uğraştırma.
+ADIM 4 — OLUŞTUR
+'Bana Forma Tasarla' butonu. Gerçek çalışan motor 3–6 farklı, görsel olarak belirgin biçimde ayrışan, seçilen sporun kesimine uygun öneri üretsin. Yükleme ve hata/yeniden deneme durumları açık olsun. Hiçbir tasarım kaybolmasın.
+
+3. GERÇEK TASARIM MOTORU
+- Mevcut 30 desen, spor kalıpları ve renk bölgelerini kullanarak kurallı bir otomatik kombinasyon motoru kur. Sadece rastgele renk değiştiren 6 kopya üretme.
+- Spor + tarz + logo paleti + kontrast + desen uyumu + yaka/kol/şort kombinasyonu ile özgün öneriler oluştur.
+- Önerilerde kontrast ve okunabilirlik önemli: numara/yazı ile zemin ayırt edilsin; logolar bozulmasın.
+- Her öneri farklı kompozisyon/desen/renk dengesi sunsun; aynı görselin ton farkı yeterli değil.
+- Logo için uygun göğüs yerleşimi otomatik yapılsın. Gerçek sponsor metni girilmemişse 'SPONSOR' gibi sahte yazılar oluşturulmasın; 'YILMAZ'/'10' placeholder'ları sipariş ve PNG'ye girmesin.
+- Kullanıcı kendi logosunu yüklediğinde logo üstüne yazı binmesin. Logo orantısı bozulmasın; baskı güvenli alanı dikkate alınsın.
+- Farklı sporlar için gerçek uygun siluet: basketbol kolsuz, voleybol uygun kesim, futbol regular, kaleci uzun kollu vb.
+- 'AI' ibaresini yalnızca gerçekten yapay zekâ modeli kullanılıyorsa göster. Model/API yoksa sahte AI çağrısı veya sahte görsel üretimi yapma. Mevcut şablon/kurallarla çalışan motoru dürüstçe 'Otomatik Tasarım' olarak sun.
+- Kullanıcı girdileri aynıysa öneriler yeniden üretilebilir veya kaydedilen öneriler değişmeden açılabilir olsun; her önerinin gerçek düzenlenebilir tasarım verisi saklansın, yalnızca resim üretme.
+
+4. SONUÇ EKRANI
+3–6 öneriyi büyük, premium, gerçekçi forma kartlarında göster; ön/arka geçişi olsun. Kartlarda 'Bunu Seç', 'Detay', 'Arkadaşlarımla Paylaş' eylemleri. 'Yeni Öneriler Oluştur' ve 'Renkleri Değiştir' butonları.
+Seçilen öneri mevcut stüdyoda aynı öğelerle açılabilsin; kullanıcı gerekirse logo, sponsor, oyuncu ve desenleri düzenleyebilsin.
+'Bu tasarımla devam et' → oyuncu isim/numara/beden, adet, sipariş önizlemesi. Oyuncu listesi isteğe bağlı ve basit olsun; tek ürün için takım kadrosu zorunlu değil.
+Öneriler taslak olarak kaydedilebilsin, V8 paylaşım/yorum/oylama ile takım arkadaşlarına gönderilebilsin. Alternatifler A–D karşılaştırmasıyla uyumlu olsun.
+
+5. 'BİLGİLERİ BIRAK, BİZ HAZIRLAYALIM' SEÇENEĞİ
+Otomatik önerileri beğenmeyen veya uğraşmak istemeyen müşteri için ayrı 'Tasarım desteği iste' seçeneği:
+Takım adı, spor, logo, renk tercihi, yaklaşık adet, açıklama, iletişim bilgisi, isteğe bağlı referans görseli.
+Talep yönetim paneline düşsün; durumlar: Yeni / İnceleniyor / Tasarım hazırlanıyor / Müşteriye gönderildi / Revizyon / Onaylandı / Siparişe dönüştü.
+Yönetici müşteriye hazırlanmış tasarımı bağlantıyla gönderebilsin; müşteri onaylayabilsin veya revizyon isteyebilsin. Bu manuel hizmet otomatik motorla karışmasın. Talep formunda KVKK/iletişim onayları uygun şekilde bulunsun. Müşteriye otomatik tamamlandı veya insan tarafından hazırlandı gibi yanlış bildirim gösterme.
+
+6. ADMIN
+Otomatik tasarım için aktif sporlar, şablon havuzları, tarz eşlemeleri, öneri sayısı, hazır renk paletleri ve uygun logo yerleşimleri yönetilebilir olsun. Karmaşık yapay zekâ kontrol paneli kurma. Tasarım desteği taleplerini listeleme, atama, not, durum, müşteri onayı ve taslağa/siparişe dönüştürme akışı olsun. Mevcut admin rol ve güvenlik kuralları korunsun.
+
+7. UX / GÖRSEL TASARIM
+V10'un sade, modern premium tasarım dilini koru. Her adımda tek soru grubu, büyük dokunmatik kartlar, açık 'Geri/Devam' ve ilerleme göstergesi. Mobilde 375/430 px'de formayı rahat göster. Uzun teknik formlar, gereksiz modal zincirleri ve çok sayıda ayar gösterme. Kullanıcı 2–3 dakikada öneri görebilmeli.
+
+8. GÜVENLİK VE VERİ
+Yüklenen logo ve referans dosyalarında format, boyut ve güvenli erişim kontrolleri; SVG gibi dosyalarda zararlı içerik engeli. Tasarımlar yalnızca sahibine ait; paylaşılan link sadece izinli veriyi gösterir. Orijinal logo dosyası, özel iletişim ve sipariş bilgileri izinsiz açığa çıkmasın. Mevcut sunucu fiyat doğrulaması, onaylı sipariş sürümleri ve üretim ZIP düzeni korunsun.
+
+9. GERÇEK TESTLER
+A) Hiç logo yüklemeden futbol için 4 tarzdan öneriler üret.
+B) Renkli logo yükle, renk önerisi al, 3–6 farklı öneri oluştur.
+C) Basketbol, voleybol ve kaleci için doğru siluet ve öneri üret.
+D) Öneri seç → stüdyoda aç → değiştir → taslak kaydet → tekrar aç.
+E) Öneriyi WhatsApp bağlantısıyla paylaş; yorum/oy ver; izinleri kontrol et.
+F) Öneri seç → kadro ekle → sipariş önizlemesi; sahte SPONSOR/YILMAZ/10 bulunmasın.
+G) Tasarım desteği talebi oluştur → adminde gör → müşteriye tasarım sun → revizyon/onay.
+H) 375/430/768/1440 px ekranları kontrol et.
+I) Eski tasarımlar, FL-1002 onaylı kalıbı, V8 paylaşım, admin yetkileri bozulmasın.
+Test edilmemiş şeyleri test edilmiş gibi yazma. Gerçek yapay zekâ veya dış servis yoksa bunu açıkça belirt.
+
+SON HEDEF
+Kullanıcı için iki net yol: 'Ben tasarlayacağım' veya 'Benim için tasarla'. İkinci yolda sadece sporunu seçsin, logosunu yüklesin, isterse renk ve tarz seçsin; sistem otomatik, birbirinden farklı, gerçekçi, düzenlenebilir forma seçenekleri sunsun. Beğenmezse insan desteği talep edebilsin. V1–V10 işlevleri korunacak, yeni canlı entegrasyon eklenmeyecek.
