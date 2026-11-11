@@ -1,0 +1,64 @@
+FORMALAB V7 — PREMIUM UI/UX YENİDEN TASARIM (FRONTEND ODAKLI)
+
+Mevcut FormaLab V1–V6 işlevleri büyük ölçüde tamamlandı. Şimdi hedef yeni modül eklemek DEĞİL, sitenin eski, kalabalık ve karmaşık görünen arayüzünü 2027 standartlarında modern, premium, ferah ve son derece anlaşılır bir deneyime dönüştürmek.
+
+KRİTİK: Mevcut veri, iş kuralları, kullanıcı hesapları, siparişler, teklifler, tasarımlar, 30 şablon, stüdyo düzenleme yetenekleri, yönetim paneli, güvenlik, ödeme ve üretim akışları korunacak. Backend/veritabanı şemasını ve fiyatlandırmayı gereksiz yere değiştirme. Sadece tasarım/arayüz, bilgi mimarisi ve kullanım kolaylığına odaklan. Çalışan fonksiyonları bozma. Canlı ödeme/e-posta/SMS/kargo bağlantısı kurma.
+
+1) TASARIM VİZYONU
+Güncel, üst segment spor markası + profesyonel kreatif tasarım aracı estetiği. Eski tip dashboard, kalın çerçeveler, çok sayıda renkli kutu, üst üste kartlar, sıkışık filtreler, yoğun gölgeler ve gereksiz ikonlardan kurtul. Beyaz/kırık beyaz açık zemin, koyu antrasit tipografi, tek kontrollü canlı vurgu rengi; geniş boşluk, temiz hizalama, az ama güçlü tipografi. Gerektiğinde stüdyoda koyu temalı odak modu. Renkler tutarlı tasarım tokenlarıyla yönetilsin. Kullanıcıya kurumsal, güvenilir, premium ve sportif his versin. Görsel kalite yalnızca gradient ve animasyonla taklit edilmesin.
+
+2) TÜM SİTE İÇİN TASARIM SİSTEMİ
+Tutarlı tipografi ölçeği, 8px tabanlı boşluk düzeni, buton boyları, input, sekme, rozet, kart, modal, tooltip, boş durum, yükleniyor durumu, bildirim ve ikon sistemi oluştur. Az sayıda köşe yarıçapı ve tutarlı gölge kullan. Kontrast, klavye erişimi, odak durumu ve okunabilirlik önemli. Buton metinleri açık ve eylem odaklı olsun. Tekrarlanan bileşenleri görsel olarak birleştir. Dekoratif kalabalığı azalt.
+
+3) ANA SAYFAYI BAŞTAN TASARLA
+Premium, editoryal spor markası ana sayfası: güçlü hero, net başlık 'SAHAYA KENDİ TARZINLA ÇIK.', büyük kaliteli forma sunumu, tek ana CTA 'Formanı Tasarla', ikincil 'Hazır Modeller'. Hero'da gereksiz yazı, sayaç ve kart yığını olmasın. Nasıl çalışır 3–4 sade adım. Öne çıkan tasarımlar büyük ve tutarlı ürün kartlarıyla. Kategoriler, takım referansları, toplu sipariş, yorumlar ve SSS hiyerarşik, ferah bölümler olarak yeniden düzenlensin. Gerçek olmayan referansları gerçek müşteri gibi sunma; örnek içerik olarak işaretle. Mobil hero ve CTA çok güçlü olsun.
+
+4) STÜDYO — EN YÜKSEK ÖNCELİK
+Mevcut stüdyo çok karmaşık görünüyor; profesyonel tasarım uygulaması gibi yeniden düzenle.
+Masaüstü:
+- Sol tarafta ince dikey araç navigasyonu: Model, Şablon, Renk, Logo, Sponsor, Yazı/Numara, Şort, Kadro.
+- Seçilen aracın ayarları tek bir kompakt, kaydırılabilir yan panelde açılsın. Her aracın bütün ayarlarını aynı anda gösterme.
+- Orta alanda EN BÜYÜK ÖĞE forma önizlemesi olsun. Nötr sahne, temiz zemin, yüksek kaliteli mockup; görsel kalabalık yok.
+- Ön/Arka/Tam Takım görünüm geçişi tek, anlaşılır segment kontrolü. Diğer detay görünümleri ikincil menüde.
+- Sağda gerektiğinde açılan kompakt özet; sürekli geniş bir üçüncü panelle çalışma alanını daraltma.
+- Üstte sade araç çubuğu: tasarım adı, kaydetme durumu, geri al/ileri al, paylaş, yardım.
+- Altta ya da sağda net tek ana CTA: 'Siparişe Devam Et'; fiyat özeti ikincil.
+- Gelişmiş katman/konum/ölçü ayarları 'Gelişmiş' bölümünde; yeni kullanıcı ilk bakışta bunlarla karşılaşmasın.
+- Adım adım yönlendirme ve ilk kullanımda kısa, kapatılabilir ipuçları.
+- Gerçek sürükleme, hizalama, baskı alanı, zoom, oyuncu seçimi, PNG/ZIP ve kaydetme işlevleri aynen çalışmalı.
+Mobil:
+- Önizleme üstte büyük, altında yatay araç sekmeleri ve açılır alt sayfa (bottom sheet).
+- Sabit ve ince eylem çubuğu; araçlar, klavye, WhatsApp ve CTA birbirini kapatmasın.
+- Tek elle kullanım, yeterli dokunma alanı, kontrollü kaydırma ve yakınlaştırma.
+- Çok sayıda paneli üst üste bindirme; tek seferde tek düzenleme görevi.
+- 375px ve 430px ekranları özellikle test et.
+
+5) ŞABLON SEÇİMİ VE ÜRÜN KARTLARI
+30 şablonu sade, büyük önizlemeli grid içinde göster. Kategori filtreleri kolay erişilir ama kalabalık olmasın. Seçili şablon belirgin. Küçük önizleme ile gerçek forma uyumlu. Renk noktaları ve tek 'Özelleştir' eylemi yeterli. Gereksiz rozetleri kaldır. Şablon karşılaştırma özelliği ikincil aksiyon olarak kalsın.
+
+6) KADRO VE OYUNCU GALERİSİ
+Oyuncu ekleme ve CSV yükleme akışını basitleştir. Masaüstünde temiz düzenlenebilir tablo, mobilde oyuncu kartları. Uyarıları satır yanında göster; sürekli büyük kırmızı kutular kullanma. Oyuncu bazlı ön/arka önizleme galerisini sade ve hızlı gezilebilir yap. Kaleci ayrımı net ama abartısız olsun.
+
+7) SİPARİŞ / TEKLİF / HESABIM
+Sipariş özeti iki aşamalı, anlaşılır akış olsun: Tasarım ve kadroyu kontrol et → iletişim/teslimat ve onay. Formlarda gereksiz alan kalabalığını azalt, alanları mantıklı grupla. Müşteri hesabında tasarımlar, takımlar, siparişler ve teklifler arasında sade navigasyon. Sipariş takip zaman çizelgesinde yalnızca mevcut durum ve önemli kilometre taşlarını ön plana çıkar; 12 adımı eşit ağırlıkla ekrana yığma. Eski sipariş ve veri alanlarını koru.
+
+8) YÖNETİM PANELİ — TEMİZ OPERASYON ARAYÜZÜ
+Admin panelini çağdaş bir SaaS yönetim arayüzüne dönüştür. Solda gruplanmış, daraltılabilir menü: Genel Bakış; Satış (Siparişler, Teklifler, Ödemeler); Üretim (İş Emirleri, Kargo); Katalog (Şablonlar, Tasarımlar); Müşteriler/Takımlar; Raporlar; Ayarlar. Dashboard'da yalnızca gerçekten önemli KPI'lar, dikkat gerektiren işler ve son aktiviteler. 10 liste ekranındaki mevcut arama/filtre/sıralama/CSV ve toplu işlemler çalışmaya devam etsin; filtreleri kompakt bir çubuk veya çekmeceye taşı. Tablolarda okunabilir satır yüksekliği, net durum etiketleri, önemli aksiyonlar görünür; ikincil işlemler üç nokta menüsünde. Mobil kart görünümü korunup sadeleştirilsin. Yetki uyarıları ve onay modalları tutarlı olsun.
+
+9) HAREKET VE PERFORMANS
+Hafif hover/geçiş animasyonları kullan; ağır video, yoğun parallax, sürekli dönen animasyon veya performans düşüren efekt ekleme. Forma önizlemesi ve editör etkileşimi akıcı kalsın. Görselleri uygun boyutlandır, lazy load kullan. Kaydetme durumunu 'Kaydediliyor / Kaydedildi' olarak anlaşılır göster.
+
+10) GÖRSEL TUTARLILIK VE METİN
+Tüm sayfalarda aynı marka dili, başlık biçimi, buton dili, ikon boyutu ve boşluk sistemi olsun. Türkçe metinleri düzgün yaz; yazım hatalarını düzelt. Gerçek marka logosu ve iletişim bilgileri henüz verilmediği için uydurma bilgi ekleme. Geçici FormaLab adını koru.
+
+11) GERİYE DÖNÜK UYUMLULUK
+Stüdyo şablonları, logolar, sponsorlar, ön/arka yüz, isim/numara, kadro, kaleci, şort, kaydet/aç/paylaş, müşteri hesabı, teklif/sipariş, sunucu fiyat doğrulaması, tasarım onayı, üretim föyü, ZIP, QR, kargo paketleri, yönetici rolleri ve güvenlik kuralları bozulmamalı. Test ödemeleri gerçek tahsilata karışmasın. Süper yönetici açığını geri getirme. Eski siparişleri silme.
+
+12) UYGULAMA SIRASI
+Önce mevcut ekranların görsel denetimini yap ve en kalabalık noktaları belirle. Sonra ortak tasarım sistemini oluştur. Sırasıyla ana sayfa → stüdyo masaüstü → stüdyo mobil → şablon galerisi → kadro → sipariş/hesap → admin paneli olarak uygula. Her bölümün sonunda ekran görüntüsüyle görsel kontrol ve çalışan işlev testi yap. Eski tasarıma benzer küçük kozmetik rötuşlarla yetinme; bilgi mimarisini gerçekten sadeleştir. Ancak özellikleri kaldırma, daha doğru yerlere taşı.
+
+13) TEST VE TESLİM
+1440px masaüstü, tablet, 430px ve 375px mobil genişliklerinde ana sayfa, stüdyo, kadro, sipariş, hesap ve admin ekranlarını kontrol et. Özellikle stüdyoda gerçek logo sürükleme, ön/arka geçiş, kaydet/aç, oyuncu seçimi, siparişe devam; adminde liste filtreleri ve yetki sınırları; müşteri sipariş takibi test edilsin. Yalnızca bakıp 'çalışıyor' deme; gerçekten denenmeyenleri ayrı yaz.
+
+SON HEDEF
+FormaLab'ın mevcut güçlü özelliklerini koruyarak karmaşık, eski görünümlü arayüzünü tamamen çağdaş, premium, ferah, kullanıcı dostu ve satışa hazır bir spor tasarım platformu deneyimine dönüştür. Bu V7'nin tek ana hedefi FRONTEND/UI/UX kalitesidir. Yeni entegrasyon, fiyatlandırma ve backend modülleriyle odağı dağıtma.
