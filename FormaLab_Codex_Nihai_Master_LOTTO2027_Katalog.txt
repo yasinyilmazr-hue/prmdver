@@ -1,0 +1,97 @@
+FORMALAB — CODEX İÇİN NİHAİ MASTER PROMPT (LOTTO 2027 KATALOĞU TEMELLİ)
+
+GÖREV VE KAYNAK
+Mevcut FormaLab projesinin müşteri ön yüzünü, forma konfigüratörünü ve buna bağlı yönetilebilir ürün seçeneklerini yeniden düzenle. Birincil referans, kullanıcı tarafından yüklenen 79 sayfalık “LOTTO 2027 MAÇ GÜNÜ KATALOĞU.pdf” dosyasıdır. ÖNCE BU PDF'İN TÜM SAYFALARINI TEK TEK OKU, GÖRSELLERİ İNCELE, SPOR/MODEL/RENK/ÜRÜN DETAYLARINI ÇIKAR. PDF Codex çalışma alanında erişilemiyorsa kullanıcıdan dosyayı projeye eklemesini iste; incelemediğin sayfaları okudum deme. İkinci UX referansı: https://www.formayaptirma.net/forma-tasarla — yalnızca kullanım kolaylığından ilham al, kodunu/tasarımını kopyalama.
+
+Bu bir sıfırdan proje değildir. Mevcut V1–V11+ uygulamasındaki kullanıcı, tasarım, taslak, paylaşım, oy, teklif, sipariş, ödeme kayıtları, iş emirleri, üretim föyü/ZIP, güvenlik ve admin işlevlerini koru. Onaylı eski siparişlerin tasarım sürümlerini değiştirme. Canlı ödeme/SMS/e-posta/kargo bağlantısı yapma, fiyatları keyfi değiştirme.
+
+KATALOGDAN DOĞRULANMIŞ ÜRÜN BİLGİLERİ
+PDF sayfa numaraları PDF görüntüleyicideki fiziksel sayfalardır, basılı katalog sayfasıyla farklı olabilir.
+
+A) FUTBOL (PDF 4–6. SAYFALAR)
+YAKA (6): Ribanalı Yarım V Yaka; Ribanalı Crescent Yaka; Ribanalı Bindirme V Yaka; Ribanalı V Yaka; Ribanalı Yuvarlak Yaka; Polo V Yaka.
+KUMAŞ (4): Mikrointerlok 160 gr; Likra 180 gr; Likralı Mesh 160 gr; Esnek Jakarlı 160 gr.
+FORMA ETEK UCU (3): Dijital Full Biyeli; Klasik Reçmeli; Yırtmaçlı.
+ŞORT PAÇA (2): Klasik Reçmeli; Yırtmaçlı.
+PDF 6. sayfada iki farklı futbol ürün grubu için ayrıca baskı ve şort kordonu seçenekleri bulunuyor: bir grupta Silikon Kabartma ve Silikon Kordon, diğerinde Dijital ve Klasik Kordon. Bunları bütün futbol modellerine otomatik ve evrensel seçenek diye dayatma; ilgili ürün grubu/model uyumluluğunu doğrula ve admin panelinden yönet.
+Futbol ürünlerinde kısa kol, uzun kol, tek üst/forma takım seçenekleri model sayfalarında gösteriliyor.
+
+B) KALECİ (PDF 41–44. SAYFALAR)
+Katalogda ayrı kaleci forma takımları ve uzun kollu görseller bulunuyor. WINNER, SPIDER, KICK modelleri ayrı kaleci kategorisinde. PDF, kaleci için bağımsız yaka/kumaş gramajı tablosu vermiyor; futbol kumaşlarını otomatik kaleciye kopyalama. Kaleci siluetini uzun kollu ve doğru oranlarda koru.
+
+C) BASKETBOL (PDF 47–48. SAYFALAR)
+YAKA (2): Ribanalı V Yaka; Ribanalı Yuvarlak Yaka.
+KUMAŞ (2): Mikrointerlok 160 gr; Petek 150 gr.
+ETEK UCU: Klasik Reçmeli.
+BASKI: Silikon Kabartma (katalogdaki “Lotto Baskılar” bağlamında; genel üretim özelliği gibi varsayma).
+ŞORT BEL LASTİĞİ/KORDON: Silikon Kordon.
+Basketbol maç formaları kolsuz; PDF 51–60. sayfalarda maç takımı modelleri var. PDF 61–66. sayfalarda ayrıca BASKETBOL WARM-UP modelleri bulunuyor: bunları maç formasından ayrı alt ürün kategorisi olarak göster, kolsuz maç formasıyla karıştırma. Bazı modeller çift taraflı forma/şort seçenekleriyle sunuluyor (PDF 65–66); yalnızca ilgili modellere uygula.
+
+D) VOLEYBOL (PDF 47–48. SAYFALAR)
+YAKA (2): Ribanalı V Yaka; Ribanalı Yuvarlak Yaka.
+KOL (3): Karpuz Kol; Sıfır Kol; Kısa Kol.
+KUMAŞ (2): Mikrointerlok 160 gr; Likra (PDF'de bu seçenek için gramaj belirtilmemiş; UYDURMA).
+ETEK UCU: Klasik Reçmeli.
+BASKI: Silikon Kabartma (katalogdaki marka baskısı bağlamını koru).
+ŞORT BEL LASTİĞİ/KORDON: Silikon Kordon.
+Kadın voleybol forma takımları PDF 67–77. sayfalarda; farklı kesim, kol ve şort biçimleri vardır. Basketbol/futbol siluetini kopyalama.
+
+E) ANTRENMAN / AKSESUAR
+PDF 45. sayfada futbol çorabı ve antrenman yeleği renkleri gösteriliyor. PDF 61–66'da basketbol warm-up üstleri bulunuyor. Antrenman ürünleri için katalogda doğrulanmamış yaka/kumaş kombinasyonları üretme. Çorap ve yeleği forma seçiminden bağımsız ek ürün olarak, mevcut altyapı uygunsa sun.
+
+MODEL KATALOĞU — PDF'DEN AYRIŞTIR
+Futbol maç forma takımı model adları (PDF 9–40 civarı, sıralama): BRONZ, VENTU, NORA, REGGINA, STORM, PROLO, FEYENOORD, FLAG, EMPIRE, THUNDER, ZAGREB, HERO, LINA, LAVA, TRIANGLE, TREVI, SHADOW, MOUNTAIN, MIRROR, AJAX, SOLANO, TARGET, ULTRAMAX, SPIDER, ELIPS, VISION, PROTEUS, PADOVA, SPEED, EXACT, UDINE. Ayrıca PDF'nin görsel başlangıç sayfalarındaki FLAG gibi kapak modeli ile tekrarlanan adları çift ürün oluşturma.
+Kaleci: WINNER, SPIDER, KICK.
+Basketbol maç takımı: BLOCK, SET, SCORE, TURIN, CRYSTAL, MARS, SPIDER, FLASH, POINT, FLAG; çift taraflı ürünler SOPRON ve PARKER.
+Basketbol warm-up: SET, TURIN, CRYSTAL, FLAT.
+Kadın voleybol: ROSE, STORM, ZAGREB, TROPEA, SOLANO, NICOLE, CRYSTAL, GARCIA, SPIDER, SIENA.
+Aynı adın farklı spor kategorisinde geçmesi aynı ürün demek değildir. Spor + ürün türü + model adıyla ayrı tanımla. PDF'de model başına sunulan renk kombinasyonlarını ve ön/arka görünümleri inceleyerek modele bağla. Katalog renk adlarını ve hangi renklerin hangi modele ait olduğunu tek tek doğrula; tüm modellere aynı renk paletini körlemesine uygulatma. PDF'de görünmeyen model veya renk kombinasyonunu “katalogda var” diye sunma.
+
+FONTLAR — ÇOK ÖNEMLİ
+PDF 7 ve 49. sayfalarda forma oyuncu isim/numara fontlarının görsel örnekleri var. Futbol ve salon sporları için ayrı örnekler gösteriliyor. Bunları yalnızca ad olarak değil, gerçek yazı karakteri görünümüyle yönetilebilir hale getir.
+Futbol font örneklerinde SHARP, FESTIVO, FORTALE, BRICOLAGE, LUZ, BAYER, VALIENTE, SPORTZAN, KAISER, GUERRILLA, ARENA, BAGOR, BRAVURA, TURBO, ATLAS, GUNNERS gibi etiketler görülüyor. Salon sporları sayfasında ALEJO, TYPO, FESTIVO, FORTALE, BRICOLAGE, LUZ, BAYER, VALIENTE, SPORTZAN, CARGO CR, KAISER, GUERRILLA, ARENA, BAGOR, BRAVURA, TURBO, ATLAS, SLIMFIT gibi adlar var. PDF'deki görsel etiket ve font dosyası adları birebir örtüşmeyebilir; eşleştirmeyi gerçek örnek görüntüsüyle doğrula.
+- PDF içine gömülü font dosyalarını çıkarıp kullanıcının uygulamasına otomatik aktarma veya dağıtma. Marka/üçüncü taraf fontları lisanslı olabilir. Yalnızca lisansı doğrulanmış, kullanılmasına izin verilmiş font dosyalarını projeye ekle; aksi halde görünümce uygun ve lisanslı alternatifler kullan ve 'referans görünümü, orijinal font değil' diye belirt.
+- FONTLARIN TÜRKÇE KARAKTERLERİ TAM DESTEKLEMESİ ZORUNLU: Ç ç, Ğ ğ, I ı, İ i, Ö ö, Ş ş, Ü ü. Büyük-küçük dönüşümünde Türkçe yerel kuralları (tr-TR) kullan. Özellikle İ/ı, Ş/ş, Ğ/ğ bozulmasın.
+- Yalnızca tarayıcıda değil: stüdyo canlı önizlemesi, PNG dışa aktarımı, paylaşım görseli, PDF üretim föyü, ZIP görselleri, sipariş ekranı ve oyuncu listelerinde aynı font ve karakterler doğru görünmeli.
+- Font seçerken örnek metin 'ÇAĞRI ŞİMŞEK / 10', 'IŞIK ÖZTÜRK / 07', 'İLKER GÜNEŞ / 19' ile gerçek önizleme göster. Desteklenmeyen karakterler varsa sessizce kare/boşluk üretme; Türkçe uyumlu lisanslı yedek font kullan ve kullanıcıya anlaşılır uyarı ver.
+- Türkçe metinler Unicode NFC normalizasyonuyla korunmalı; veritabanı, CSV içe/dışa aktarma ve PDF/PNG render sırasında kodlama bozulmamalı. Türkçe CSV için UTF-8 BOM veya Excel uyumlu güvenilir yöntem kullan. Ş, Ğ, İ gibi karakterler indirilmiş dosyalarda da doğru görünmeli.
+- Katalogun kendisinde PDF metin çıkarmada bazı 'İ' harfleri bozuk görünebilir (örn. Mikrointerlok); görseldeki doğru Türkçe yazımı esas al. Katalogdaki tipografiyi, marka logolarını veya lisanslı fontları birebir kopyalama.
+
+MÜŞTERİ İÇİN SON DERECE KOLAY AKIŞ — 5 ANA ADIM
+Önce 'Kendim Tasarlayacağım' veya 'Benim İçin Tasarla', ardından spor seçimi. Sonra:
+1. FORMA DETAYLARI: sporun geçerli yaka, kol, kumaş, etek ucu ve varsa şort paçası seçenekleri. Sadece o spora ve modele uygun seçenekleri görsel kartlarla göster. Tek geçerli seçenek varsa ekstra adım açma.
+2. MODEL VE RENK: katalogdan doğrulanmış modeller ve model bazlı renkler; ilk 6–8 popüler model, 'Tüm modeller' ile tamamı. Büyük ön/arka forma görseli sürekli görünür.
+3. ARMA VE SPONSOR: iki ayrı isteğe bağlı yükleme; takım arması küçük göğüste, sponsor büyük orta alanda; ek sponsor gelişmişte. Sahte SPONSOR/YILMAZ/10 yazıları gerçek siparişe girmez.
+4. TAKIM: şort tercihi, şort paçası (uygunsa), oyuncu isimleri, numaralar, beden/adet. Tek forma için kadro zorunlu değil.
+5. KONTROL: spor, model, renk, yaka, kumaş, kol, etek, şort, arma, sponsor, oyuncular ve toplam fiyat özeti. Taslak kaydet, WhatsApp ile paylaş, siparişe devam et.
+Bu 5 ana adım içinde kısa alt seçimler olabilir; kullanıcıyı 10 ayrı uzun ekranla yorma. 'Geri/Devam Et' net olsun; tüm seçimler geri dönünce korunsun. Mobilde büyük forma üstte, seçenekler altta, sabit ama klavyeyi kapatmayan CTA. 375/430/768/1440 px test et.
+
+BENİM İÇİN TASARLA
+Mevcut kurallı otomatik motoru koru. Spor, model uyumluluğu, yaka/kumaş/kol ve renk tercihleri bu katalog verileriyle uyumlu olsun. Motor katalogda olmayan kombinasyonları 'resmî model' diye sunmasın. 3–6 farklı, düzenlenebilir öneri, kaydet/paylaş/oylama/sipariş işlevleri devam etsin.
+
+GELİŞMİŞ STÜDYO
+Katmanlar, logo/sponsor sürükleme, font, numara, baskı güvenli alanı, geri al/ileri al, şablonlar ve paylaşım sürümleri korunmalı. Kolay/gelişmiş geçişi veri kaybettirmesin. V9 forma oranları korunmalı; futbol, basketbol ve voleybol ayrı kesim.
+
+ADMİN VE VERİ MODELİ
+Branş > ürün türü > model > geçerli yaka/kol/kumaş/etek/şort paçası > renk varyantı > font seçeneği şeklinde yönetilebilir katalog. Model ve renklerin kaynak PDF sayfa referansını admin notunda sakla. Yönetici yeni model/renk/üretim seçeneği ekleyip pasifleştirebilsin. Aynı model adını farklı sporda ayrı kayıt olarak tut. Katalogdan gelen ürün verileri örnek/üretici referansı olarak işaretlensin; FormaLab'ın bu ürünleri satma veya Lotto görsellerini kullanma hakkı otomatik varsayılmasın.
+
+MARKA VE TELİF SINIRI
+Bu katalog üçüncü taraf LOTTO markasına aittir. PDF'deki görselleri, LOTTO logosunu, fotoğrafları, özgün desenleri veya lisanslı fontları izinsiz kopyalayıp halka açık FormaLab sitesine yayınlama. Katalogu ürün seçenekleri, teknik terminoloji, model ayrımları ve UX gereksinimleri için referans al. Gerçek katalog ürünlerini satma/görsellerini kullanma izni varsa kullanıcı bunu ayrıca doğrulasın; aksi halde özgün FormaLab görselleri ve şablonları üret, model adlarını da 'katalog referansı' olarak dahili tut. Rakip sitenin tasarımını da birebir kopyalama.
+
+KABUL TESTLERİ
+- Futbol 6 yaka, 4 kumaş, 3 etek, 2 şort paçası doğru ve farklı görünüyor.
+- Basketbol 2 yaka, 2 kumaş; maç/warm-up/çift taraflı ürün ayrımı.
+- Voleybol 2 yaka, 3 kol, 2 kumaş (Likra gramajsız), doğru kadın voleybol kesimi.
+- Kaleci modelleri ayrı, uydurma kumaş yok.
+- Model bazlı renkler ve ön/arka görünümler doğru; aynı isimli farklı branş modelleri karışmıyor.
+- Türkçe test isimleri: ÇAĞRI ŞİMŞEK, IŞIK ÖZTÜRK, İLKER GÜNEŞ. Stüdyo, PNG, paylaşım görseli, üretim PDF/ZIP ve CSV'de doğru.
+- Taslak kaydet/aç, paylaş/oyla, teklif/sipariş, onay/üretim föyü/ZIP çalışıyor.
+- Eski onaylı siparişler ve rol güvenliği korunuyor.
+- 375/430/768/1440px'de taşma, kayıp CTA veya okunmayan yazı yok.
+- PDF'deki kaynak seçenekler ile uygulamadaki kayıtları karşılaştıran kontrol raporu oluştur; belirsiz/eksik bilgileri uydurma.
+
+ÇALIŞMA YÖNTEMİ
+Önce 79 sayfalık PDF'yi ve mevcut kod tabanını incele. Katalog verilerini sayfa kaynaklarıyla çıkar, spor bazlı uygunluk tablosunu oluştur, ardından frontend 5 adımlı akışı uygula. Uygulamada gerçekten değişiklik yap, testleri çalıştır, tarayıcıda kontrol et. Yalnızca plan yazma. Son raporda: tamamlananlar, PDF ile doğrulananlar, Türkçe font/çıktı testleri, gerçek tarayıcı testleri, test edilemeyenler, lisans veya üretici onayı bekleyen görseller/fontlar. Mevcut verileri silme.
+
+NİHAİ AMAÇ
+FormaLab, katalogdaki spor/ürün farklılıklarını doğru anlayan, ancak müşteriye bunları 5 basit adımda seçtiren premium ve çok kolay bir forma tasarım platformu olsun. Türkçe karakterler bütün fontlarda ve bütün dışa aktarımlarda doğru çalışsın.
