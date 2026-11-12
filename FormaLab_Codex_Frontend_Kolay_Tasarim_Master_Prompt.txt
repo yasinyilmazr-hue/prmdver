@@ -96,3 +96,16 @@ Uygulamayı gerçekten değiştir; yalnızca plan yazma. Önce mevcut kodu incel
 
 NİHAİ HEDEF
 FormaLab'ın güçlü altyapısını koruyarak müşteri tarafını radikal biçimde sadeleştir. Referans kadar kolay, fakat daha modern ve kapsamlı bir forma tasarım deneyimi sun. Kullanıcıya tek seferde tek karar verdir, formayı her zaman büyük göster ve tasarım sürecini 5 ana adıma indir.
+
+KRİTİK DÜZELTME — BRANŞA GÖRE DEĞİŞEN ÜRÜN SEÇENEKLERİ
+Kullanıcının sağladığı 6 yaka, 4 kumaş, 3 etek ucu ve 2 şort paçası yalnızca FUTBOL/HALI SAHA için verilmiş gerçek referans seçenekleridir. Bunları basketbol, voleybol, kaleci veya antrenmana otomatik kopyalama. Diğer branşların gerçek üretim seçenekleri henüz kullanıcı tarafından verilmedi. Bu nedenle onlar için kumaş, yaka, etek ve şort paçası isimleri/gramajları uydurma.
+
+Önce mevcut projede spor bazında hangi ürün seçeneklerinin gerçekten tanımlı olduğunu incele. Spor bazlı yapı kur: her branşın kendine ait yaka, kumaş, kesim, kol, etek ve şort-paça seçenekleri, uygunluk kuralları, görselleri, varsayılanları ve sıralaması olsun. Yönetici bunları branş bazında ekleyebilsin, düzenleyebilsin, pasife alabilsin. Futbol için sağlanan seçenekleri eksiksiz yükle. Diğer branşlarda yalnızca doğrulanmış/mevcut seçenekleri göster; henüz bilgi yoksa müşteriye sahte seçenek gösterme, yönetim panelinde 'Ürün seçenekleri bekleniyor' durumuyla yönet.
+
+Müşteri deneyimi tüm branşlarda aynı derecede kolay olmalı fakat adımlar dinamik olmalı: o branşta yaka seçeneği yoksa yaka adımı hiç görünmesin; kumaş seçeneği tanımlı değilse kumaş seçimini zorunlu kılma; şort seçilmediyse şort paçası adımı görünmesin. İlgili branşta yalnızca bir geçerli seçenek varsa ayrı ekran açmadan varsayılan seçip özette göster. Futbolun 5 ana adımlı deneyimini diğer branşlara körlemesine dayatma. Müşteri gereksiz seçim görmesin.
+
+Örnek mantık: Futbol → kullanıcıdan gelen 6 yaka, 4 kumaş, 3 etek ucu ve 2 şort paçası; Basketbol → mevcut kolsuz forma ve uzun şort silueti korunur, yalnızca o branşa tanımlanan seçenekler; Voleybol → mevcut özel kısa kollu kesim ve o branşa tanımlı seçenekler; Kaleci → mevcut uzun kollu kesim ve o branşa tanımlı seçenekler; Antrenman → mevcut rahat kesim ve o branşa tanımlı seçenekler. Bunlar ürün özellikleri için tahmin değildir; mevcut siluetleri koruma talimatıdır.
+
+'Benim İçin Tasarla' otomatik motoru da aynı branş bazlı seçenek kaynağını kullansın. Seçilen branşta olmayan yaka/kumaş/etek seçeneğini önerilerde üretmesin. Taslak, teklif, sipariş, üretim föyü ve ZIP'e yalnızca geçerli branş seçenekleri işlensin. Branş değiştirilirken uyumsuz seçimler için uyarı göster, kullanıcı onayı olmadan veriyi silme. Eski siparişleri değiştirme.
+
+Codex teslim raporunda futbol dışındaki branşlar için eksik gerçek yaka/kumaş/üretim bilgilerini ayrı listele; kullanıcı bunları ileride sağladığında panelden eklenebilsin. Bu yeni talimat önceki metindeki branşlara ilişkin genellemelerle çelişirse BU TALİMAT ÖNCELİKLİDİR.
