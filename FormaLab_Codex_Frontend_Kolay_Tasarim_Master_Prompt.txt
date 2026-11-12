@@ -1,0 +1,98 @@
+CODEX GÖREVİ — FORMALAB ÖN YÜZÜNÜ BAŞTAN ELE AL, MEVCUT SİSTEMİ KORU
+
+PROJE
+Mevcut FormaLab uygulamasında yalnızca FRONTEND, UI/UX ve kullanıcı akışını kapsamlı biçimde yeniden düzenle. Kullanıcı, https://www.formayaptirma.net/forma-tasarla sayfasındaki kadar basit, adım adım anlaşılır bir forma tasarlama deneyimi istiyor; ancak FormaLab daha modern, daha kaliteli ve daha işlevsel olmalı. Rakibin markasını, görsellerini, kodunu veya metinlerini kopyalama. Referans sayfayı tarayıcıda açabiliyorsan akışını incele; erişemiyorsan bunu açıkça belirt ve aşağıdaki gereksinimleri uygula.
+
+ÇOK ÖNEMLİ SINIR
+Bu mevcut çalışan bir proje. Backend, veritabanı, kimlik doğrulama, güvenlik kuralları, fiyat motoru, sipariş/teklif/üretim sistemi, paylaşım, taslak, otomatik tasarım motoru ve yönetim verilerini bozma. API sözleşmelerini mümkün olduğunca koru. Yeni entegrasyon, ödeme, SMS, e-posta, kargo veya fiyat değişikliği yapma. Yeni uygulama kurma. Önce mevcut kod tabanını incele; mevcut route, bileşen, state ve veri modellerini çıkar. Sonra plan yapıp frontend değişikliklerini uygula. Yalnızca mockup üretme: çalışan uygulamayı revize et.
+
+TASARIM HEDEFİ
+Bilgisayarı az bilen biri bile hiç açıklama okumadan 3–5 dakikada forma hazırlayabilmeli. Ekran sade, ferah, premium spor markası gibi olmalı. Dev başlık, ağır gradient, kaba kutu, yoğun filtre, karmaşık yan panel, gereksiz pop-up ve aynı anda görünen onlarca ayar olmasın. Beyaz/kırık beyaz zemin, antrasit yazı, yeşil yalnızca ana CTA ve seçili durumlarda. Kaliteli gerçekçi forma mockup'ı büyük ve sürekli görünür. Masaüstü ve mobilde net adımlar.
+
+İLK GİRİŞ
+Ana sayfa: güçlü ama sade hero, tek ana CTA 'Formanı Tasarla', ikincil 'Hazır Modeller'. Spor türlerini gösteren büyük, temiz kartlar. Eski tarz slider yerine tek güçlü vitrin; otomatik carousel gerekmez.
+'Formanı Tasarla' → önce iki büyük seçenek:
+1) Kendim Tasarlayacağım
+2) Benim İçin Tasarla
+Varsa küçük 'Taslağıma Devam Et' bağlantısı.
+Sonra spor seçimi: Futbol/Halı Saha, Basketbol, Voleybol, Kaleci, Antrenman. Spor seçimi atlanmasın; seçilen spora uygun siluet ve seçenekler açılsın. Önceden kaydedilmiş taslağın sporu korunsun.
+
+ANA İLKE: TEK SEFERDE TEK KARAR
+Müşteriye tüm ayarları tek sayfada gösterme. İlerleme çubuğu, kısa başlık, görsel seçenek kartları, sabit 'Geri' ve 'Devam Et' butonları kullan. Seçim yapıldığında önizleme anında değişsin. Kullanıcı istediği adıma geri dönsün, hiçbir bilgi kaybolmasın. Gereksiz zorunlu alan koyma. Seçenekler yönetilebilir veri kaynaklarından gelsin; yalnızca görünüm amaçlı sahte kontroller yapma.
+
+FUTBOL/HALI SAHA İÇİN KOLAY TASARIM AKIŞI
+0. Spor seçimi.
+1. YAKA SEÇ: 6 görsel kart, doğru farklı yaka silueti:
+- Ribanalı Yarım V Yaka
+- Ribanalı Crescent Yaka
+- Ribanalı Bindirme V Yaka
+- Ribanalı V Yaka
+- Ribanalı Yuvarlak Yaka
+- Polo V Yaka
+Her seçenekte yakın plan yaka görseli; seçimle forma üzerindeki gerçek yaka şekli değişsin. Sadece etiket değiştirme.
+2. KUMAŞ SEÇ: 4 büyük doku kartı:
+- Mikrointerlok 160 gr
+- Likra 180 gr
+- Likralı Mesh 160 gr
+- Esnek Jakarlı 160 gr
+Her kartta ad, gramaj, gerçek fotoğraf varsa doku; yoksa örnek görsel olduğu belli olsun. Uydurma teknik özellik, fiyat veya stok bilgisi yazma. Seçim sipariş/üretim verisine aktarılsın.
+3. ETEK UCU SEÇ: 3 görsel kart:
+- Dijital Full Biyeli
+- Klasik Reçmeli
+- Yırtmaçlı
+Seçim forma etek ucunun görünümünü gerçekten değiştirsin.
+4. MODEL/DESEN VE RENK: İlk 6–8 popüler şablonu göster, 'Tüm modeller' ile 30'a eriş. Hazır uyumlu renk paletleri öne çıksın; özel renk ve bölge ayarları isteğe bağlı 'Gelişmiş' bölümünde.
+5. TAKIM ARMASI VE SPONSOR: İki ayrı, isteğe bağlı alan:
+- Takım Arması: küçük sol göğüs; yükle / armamız yok / basit arma oluştur.
+- Sponsor Logosu: geniş orta göğüs; yükle / firma adını yaz / sponsorumuz yok.
+Ek sponsorlar gelişmiş seçeneklerde. Logo oranı korunmalı, çakışma olmamalı. Örnek SPONSOR/YILMAZ/10 metni gerçek tasarıma, PNG'ye veya siparişe eklenmesin.
+6. ŞORT VE ŞORT PAÇASI: Önce 'Şort ekle' tercihi. Şort yoksa bu adımı atla. Şort varsa 2 paça seçeneği:
+- Klasik Reçmeli
+- Yırtmaçlı
+Şort rengi, numara ve arma isteğe bağlı. Şort paçası seçimi görünümü gerçekten değiştirsin.
+7. OYUNCULAR / BEDENLER: Basit İsim / Numara / Beden / +Oyuncu ekle. Tek forma için takım kadrosu zorunlu değil. Toplu CSV ve gelişmiş kadro ikincil.
+8. KONTROL VE DEVAM: Büyük ön/arka forma ve varsa şort önizlemesi, spor, yaka, kumaş, etek ucu, şort paçası, arma, sponsor, oyuncu/beden/adet ve sistemin mevcut fiyatı. 'Değiştir' her ilgili adıma götürsün. Ana CTA 'Siparişe Devam Et'; ikincil 'Taslağı Kaydet' ve 'Arkadaşlarımla Paylaş'.
+
+ADIM SAYISINI AKILLI AZALT
+Yukarıdaki seçimleri ayrı veri alanları olarak koru ama kullanıcıyı 9 uzun ekranla yorma. Yakın kararları mantıklı şekilde grupla: örn. 'Forma Detayları' içinde Yaka → Kumaş → Etek Ucu kısa alt seçimleri; 'Görünüm' içinde Desen → Renk; 'Kişiselleştir' içinde Arma/Sponsor; 'Takım' içinde Şort/Oyuncular; son 'Kontrol'. Üstte toplam 5 ana adım göster, içeride kısa alt adımlar olsun. Her adım tek net karar odaklı kalsın. Seçim sonrası bir sonraki adıma tek tıkla ilerle. Kullanıcı dilerse adım özetinden eski seçime dönebilsin.
+
+DİĞER SPORLAR
+Basketbol, voleybol, kaleci ve antrenman sporlarına futbol yakalarını/kumaşlarını körlemesine kopyalama. Mevcut spor kalıpları korunmalı. Uygun seçenekleri göster, uyumsuz olanları gizle. Her spor için doğal ön/arka siluet, şort ve kişiselleştirme. Voleybol futbol forması gibi görünmesin. Sporlar arası geçişte veri kaybı olmadan uyumsuzluk uyarısı göster.
+
+BENİM İÇİN TASARLA
+Mevcut otomatik motoru koru. Spor, yaka, kumaş, etek ucu, takım arması, sponsor ve renk tercihlerini sade kartlarla al. Sonra 3–6 farklı düzenlenebilir öneri göster. Kullanıcı öneriyi seçip stüdyoda açabilsin, taslak kaydedebilsin, arkadaşına gönderebilsin veya siparişe devam edebilsin. 'Yapay zekâ' ifadesini gerçek AI servisi yoksa kullanma.
+
+GELİŞMİŞ MOD
+Mevcut logo sürükleme, katmanlar, sponsor konumları, 30 şablon, renk bölgeleri, oyuncu fontları, baskı alanı, geri al/ileri al, sürüm, oylama ve PNG indirme işlevlerini koru. Bu araçlar kolay modda kalabalık yapmasın; tek 'Gelişmiş Düzenle' ile erişilsin. Kolay ↔ gelişmiş geçişte tüm seçimler ve öğeler korunsun.
+
+GÖRSEL DÜZEN
+Masaüstü: üstte sade adım çubuğu; sol/orta alanda büyük forma önizlemesi; sağda yalnızca aktif adımın görsel seçimleri; altta sabit net geri/devam. Mobil: büyük forma üstte, alt panelde seçimin kartları, erişilebilir sabit devam butonu. 375/430/768/1024/1440px ekranlarda hiçbir taşma veya üst üste binme olmasın. Klavye açılınca CTA kapanmasın. Ürün görselleri uzayıp daralmasın, V9'daki doğru oranlar korunsun.
+
+TEKNİK İŞ AKIŞI (KOD YAZIMINI SEN YÖNET)
+- Mevcut bileşenleri ve veri akışını incele, yeniden kullanılabilir yapıyı koru.
+- Önce frontend bilgi mimarisini ve ekran sırasını düzenle.
+- Her adım mevcut state ile gerçek veriye bağlansın; kaydet/aç/paylaş/sipariş akışları aynı veri modelini kullansın.
+- Yeni yaka/kumaş/etek/şort-paça alanları mevcut veri modelinde yoksa en az değişiklikle uyumlu biçimde ekle; eski tasarımlar güvenli varsayılanlarla açılsın, eski onaylı siparişler değişmesin.
+- Yönetim panelinde bu seçeneklerin görselleri, aktifliği, spor uyumluluğu ve sıralaması düzenlenebilsin; fiyat değişikliğini zorunlu kılma.
+- Başarısız kaydetme, eksik beden ve yanlış dosya yüklemede anlaşılır Türkçe hata mesajları göster.
+- Var olan rol ve sahiplik güvenliğini koru; personel Hesabım ekranında başka müşterilerin kayıtlarını görmesin.
+
+KABUL TESTLERİ
+1) İlk kez gelen misafir 5 ana adımı kolayca tamamlayabiliyor mu?
+2) 6 yaka gerçekten farklı görünüyor mu?
+3) 4 kumaş doğru isim/gramajla saklanıyor mu?
+4) 3 etek ucu ve 2 şort paçası görsel olarak ayrışıyor mu?
+5) Şort yokken şort paçası adımı gizleniyor mu?
+6) Arma ve sponsor ayrı doğru konumlarda mı; hayalet yazı var mı?
+7) Spor değişimi ve kolay/gelişmiş mod geçişinde veri korunuyor mu?
+8) Taslak kaydet → aç → paylaş → yorum/oy → sipariş akışı çalışıyor mu?
+9) Otomatik öneriler seçilen yaka/kumaş/etek tercihini koruyor mu?
+10) Sipariş, teklif, üretim föyü ve ZIP'te tüm seçimler doğru mu?
+11) Eski FL-1002 gibi onaylı siparişler ve mevcut tasarımlar bozulmadı mı?
+12) Mobil ve masaüstü görünümünde forma büyük, butonlar net, işlem sayısı düşük mü?
+
+TESLİM
+Uygulamayı gerçekten değiştir; yalnızca plan yazma. Önce mevcut kodu incele, sonra değişiklikleri uygula, build/test çalıştır ve tarayıcıda kritik akışları kontrol et. Yapılanları, gerçekten test edilenleri, test edilemeyenleri ve kalan sorunları açıkça raporla. Mümkünse referans site ile FormaLab'ın temel görev başına tıklama/adım sayısını karşılaştır. Gerçek insan testi yapılmadıysa yapılmış gibi gösterme.
+
+NİHAİ HEDEF
+FormaLab'ın güçlü altyapısını koruyarak müşteri tarafını radikal biçimde sadeleştir. Referans kadar kolay, fakat daha modern ve kapsamlı bir forma tasarım deneyimi sun. Kullanıcıya tek seferde tek karar verdir, formayı her zaman büyük göster ve tasarım sürecini 5 ana adıma indir.
