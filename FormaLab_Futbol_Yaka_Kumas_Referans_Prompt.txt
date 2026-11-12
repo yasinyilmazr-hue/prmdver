@@ -45,3 +45,25 @@ Görselde bir spor markasının logosu var. Marka logosunu, grafiklerini ve foto
 
 SON HEDEF
 Müşteri sporunu seçtikten sonra altı yaka ve dört kumaş seçeneğini görsel kartlardan kolayca seçsin. FormaLab, referanstaki kadar anlaşılır ama daha modern ve kullanışlı olsun. Bu görevin odağı doğru yaka/kumaş içerikleri ve bunların bütün tasarım-sipariş akışına eksiksiz bağlanmasıdır.
+
+EK REVİZYON — FUTBOL ETEK UCU VE ŞORT PAÇA ÇEŞİTLERİ
+Kullanıcının ayrıca gönderdiği 'FUTBOL ETEK UCU VE ŞORT ÇEŞİTLERİ.jpeg' görselindeki seçenekleri de aynı forma tasarım akışına ekle.
+
+FUTBOL FORMA ETEK UCU (3 SEÇENEK):
+1. Dijital Full Biyeli
+2. Klasik Reçmeli
+3. Yırtmaçlı
+
+FUTBOL ŞORT PAÇA (2 SEÇENEK):
+1. Klasik Reçmeli
+2. Yırtmaçlı
+
+Bunlar renk/desen seçimi değil, gerçek dikim/bitiriş biçimi seçenekleridir. Her seçeneği görsel yakın plan kartlarla göster. Forma etek ucunda biyenin, reçmenin ve yırtmacın görünüşü birbirinden farklı olsun. Şortta da klasik reçmeli ve yırtmaçlı paça birbirinden ayırt edilebilsin. Müşteri seçtiğinde forma veya şort önizlemesi gerçekten değişsin; yalnızca metin etiketini değiştirme.
+
+Kullanım kolaylığı: Yaka ve kumaş seçiminden sonra 'Etek Ucu' seçimi göster. Şort siparişe dahilse 'Şort Paçası' seçimi de göster; şort yoksa gereksiz adım çıkarma. Varsayılan seçenekler yönetim panelinden belirlenebilsin; müşteri sonradan değiştirebilsin. Otomatik tasarım motoru bu seçimleri de korusun.
+
+Seçimler taslak, teklif, sipariş, onay, üretim föyü ve üretici ZIP paketinde doğru adlarıyla saklansın. Yönetim panelinde seçenekleri aktif/pasif, spor uyumluluğu, görsel, sıralama ve varsa fiyat farkı açısından yönetebil. Mevcut fiyatları değiştirme ve teknik üretim özellikleri uydurma.
+
+Referans görseldeki Lotto markasını, logosunu ve özgün çizimlerini siteye kopyalama; FormaLab'a özgü temiz teknik çizimler/önizlemeler hazırla.
+
+TEST: 3 etek ucu + 2 şort paçası seçeneklerini tek tek seçip önizlemede gerçekten farklı göründüğünü kontrol et; şortsuz akışta şort paçası adımı çıkmamalı. Kaydet/aç, otomatik öneri, sipariş, üretim föyü ve ZIP akışlarında tercihler korunsun. Eski onaylı siparişler değişmesin.
