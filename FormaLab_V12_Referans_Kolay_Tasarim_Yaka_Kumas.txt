@@ -1,0 +1,78 @@
+FORMALAB V12 — RAKİPTEKİ KOLAYLIKTAN İLHAM ALAN, DAHA GÜÇLÜ FORMA SİHİRBAZI
+
+REFERANS: https://www.formayaptirma.net/forma-tasarla
+Bu sayfayı ve içine gömülü forma tasarım uygulamasını gerçek tarayıcıda masaüstü ve mobilde incele. Rakibin güçlü yanı basit, yönlendirmeli akış: ilk adımda yaka seçimi, ardından model/renk/isim-numara ve sipariş; kumaş seçenekleri ayrı anlaşılır biçimde açıklanıyor. Rakibin tasarımını, metnini, markasını veya görsellerini kopyalama. Onun kullanım kolaylığını örnek alıp FormaLab'ın daha kapsamlı özelliklerini çok daha anlaşılır hale getir.
+
+BU BİR MEVCUT PROJE REVİZYONUDUR. V1–V11'deki kullanıcılar, taslaklar, tasarımlar, otomatik motor, arma/sponsor ayrımı, oylama, siparişler, üretim ve yönetim verileri korunacak. Fiyatları değiştirme. Canlı ödeme, SMS, e-posta, kargo entegrasyonu kurma.
+
+ANA HEDEF: Bilgisayar bilmeyen bir müşteri 2–4 dakika içinde sporunu, yaka modelini, kumaşını, renk/desenini, takım armasını ve sponsorunu seçebilsin; oyuncularını ekleyip taslağını paylaşabilsin veya siparişe geçebilsin. Gelişmiş özellikler kaybolmasın ama ilk ekranda görünmesin.
+
+1. REFERANS DENEYİMİNİ İNCELE VE SÜRTÜNMEYİ AZALT
+- Rakibin gerçek forma tasarlama uygulamasındaki ilk ekrandan son ekrana kadar tıklama sayısını, butonları, seçim sırasını, önizleme konumunu, geri/ileri davranışını ve mobil kullanımını analiz et.
+- FormaLab'da aynı işlemi yapmak için kaç tıklama gerektiğini karşılaştır; gereksiz adım ve modal zincirlerini azalt.
+- Kopya arayüz üretme. FormaLab görsel olarak daha premium, işlev olarak daha güçlü, kullanım olarak en az referans kadar kolay olsun.
+- Rakip uygulama doğrulama engeli nedeniyle açılamazsa görebildiğin sayfa açıklamalarını kullan ve erişemediğin etkileşimleri denemiş gibi anlatma.
+
+2. İLK KARAR: TASARIM YÖNTEMİ VE SPOR
+İlk girişte iki büyük seçenek: 'Kendim Tasarlayacağım' ve 'Benim İçin Tasarla'. Varsa 'Taslağıma Devam Et' bağlantısı.
+Ardından spor kartları: Futbol/Halı Saha, Basketbol, Voleybol, Kaleci, Antrenman.
+Spor kartında kısa isim ve o spora ait doğru forma görseli olsun. Spor seçimi sonradan değiştirilebilir ama kayıtlı öğeler kaybolmasın.
+'Benim İçin Tasarla' akışında da seçilen yaka ve kumaş tercihleri otomatik önerilere uygulansın.
+
+3. YAKA SEÇİMİ — ÖNE ÇIKAR
+Spor seçiminden hemen sonra büyük, görsel yaka kartları göster:
+- Bisiklet yaka
+- V yaka
+- Polo yaka
+- Hakim yaka
+- Diğer üretilebilir seçenekler
+Her kartta yakın plan yaka önizlemesi ve sade isim. Seçince büyük forma önizlemesinde anında değişsin. Uygun olmayan spor/yaka kombinasyonlarını gizle veya neden uygun olmadığını açıkla. Yaka seçimi sonradan tek dokunuşla değiştirilebilsin. Mevcut modellerle gerçekten desteklenmeyen yakayı çalışıyormuş gibi gösterme; destekleniyorsa ekle.
+
+4. KUMAŞ TİPİ — ANLAŞILIR GÖRSEL SEÇİM
+Yaka seçiminin ardından kumaş seçimi sun. Kumaş türleri yönetim panelinden eklenebilir/düzenlenebilir olsun. İlk kurulumda örnek ve düzenlenebilir seçenekler:
+- Standart spor kumaşı
+- Nefes alabilen file kumaş
+- Esnek performans kumaşı
+- Premium profesyonel kumaş
+Bunlar gerçek stok/tedarikçi ürünü doğrulanmadıkça 'örnek' olarak işaretlensin; kumaşların teknik özelliklerini veya fiyatlarını uydurma.
+Her kumaş kartında: gerçek kumaş görseli/doku örneği (varsa), kısa açıklama, kullanım önerisi, rahatlık/hava geçirgenliği gibi doğrulanmış nitelikler, fiyat farkı varsa mevcut ayarlardan alınan değer. 'Hangisini seçmeliyim?' ile 2–3 kısa sorudan öneri ver; öneriyi kesin teknik vaat gibi sunma.
+Kumaş seçimi formanın renk/desenini değiştirmesin; sipariş, teklif, üretim föyü ve üretici ZIP'inde ayrı alan olarak korunsun. Siparişten önce kumaşın seçildiği açıkça görülsün. Yönetici hangi spor için hangi kumaşın kullanılabileceğini ayarlayabilsin.
+
+5. TEK EKRANLIK KOLAY TASARIM
+Spor → Yaka → Kumaş kararlarından sonra kullanıcıyı uzun formlara boğma. Büyük forma önizlemesi sabit kalırken 3 kısa bölüm:
+A) 'Model ve renk' — önce 6 popüler desen, hazır renk paletleri, 'Tüm modeller' ikincil.
+B) 'Arma ve sponsor' — ayrı, isteğe bağlı kartlar. Takım arması küçük sol göğüste, sponsor ortada; ek sponsorlar 'Diğer seçenekler'de. Gerçek kullanıcı metnini silme; sahte SPONSOR/YILMAZ/10 üretme.
+C) 'Oyuncular ve adet' — İsim, Numara, Beden, +Oyuncu; tek forma için kadro zorunlu değil. CSV ikincil.
+Ekranın altında her zaman net 'Geri' / 'Devam' ve 'Taslağı Kaydet' eylemleri. Üstte '1/...' ilerleme göstergesi ve 'Seçimlerini değiştir' kısa yolu. Kullanıcı ilerledikçe forma canlı değişsin. Teknik terim, koordinat, katman, karmaşık popup göstermeden bitirebilsin.
+
+6. HIZLI SİPARİŞ VE PAYLAŞIM
+Son ekranda büyük ön/arka forma, spor, yaka, kumaş, arma, sponsor, oyuncular, beden/adet, şort/kaleci tercihi ve mevcut sistemin hesapladığı fiyat kısa özet halinde görünsün.
+Ana eylem 'Siparişe Devam Et'. İkincil 'Arkadaşlarımla Paylaş' ve 'Taslak Kaydet'. Her seçim yanında 'Değiştir' bağlantısı olsun.
+Giriş yapmayı tasarım başlangıcında zorunlu tutma. Misafir siparişi ve paylaşım mevcut güvenli akışla devam etsin.
+Kullanıcı hiçbir seçim yapmadan bile örnek tasarımı görebilsin; fakat örnek yazı siparişe veya baskı paketine girmez.
+
+7. GELİŞMİŞ MODU KORU
+Katmanlar, hassas logo konumu, sponsor alanları, 30 desen, kesim, ön/arka, numara fontu, baskı güvenli alanı, sürümler, oylama ve üretici paketi eksiksiz kalsın. 'Gelişmiş Düzenle' tek bir isteğe bağlı bağlantı olsun. Kolay ve gelişmiş mod arasında gidip gelirken yaka, kumaş, arma, sponsor, oyuncu ve renkler korunmalı.
+
+8. OTOMATİK TASARIM MOTORUNA ENTEGRASYON
+'Benim İçin Tasarla' seçen kullanıcı da spor, yaka, kumaş, arma ve sponsor bilgilerini verebilsin. Motor 3–6 farklı tasarım önerisi üretirken seçilen yaka ve spor kesimine uysun. Kumaş sipariş meta verisine kaydedilsin. Otomatik öneri → stüdyo → taslak/paylaşım → sipariş akışı çalışsın.
+
+9. TASARIM DİLİ
+Referanstaki kolaylığı al, eski görünümlü UI'ı alma. Büyük ama kaba olmayan forma görselleri, ferah beyaz/kırık beyaz zemin, koyu metin, kontrollü yeşil vurgu, sade kartlar, tutarlı tipografi. Masaüstünde büyük sabit forma önizlemesi + tek aktif seçim paneli. Mobilde forma üstte, seçenekler altta, CTA sabit ama klavyeyi kapatmayacak şekilde. Çok sayıda kart, ağır gölge ve dev başlık kullanma. İlk kullanımda açıklama metni kısa olsun; müşteri hiç okumadan ilerleyebilsin.
+
+10. ADMİN KUMAŞ VE YAKA YÖNETİMİ
+Panelde 'Yaka ve Kumaşlar' alanı: ekle/düzenle, aktif/pasif, spor uyumluluğu, görsel, kısa açıklama, sıralama, varsa fiyat farkı. Mevcut fiyatları değiştirme. Eski siparişlerdeki yaka/kumaş verilerini bozmadan yeni siparişlere uygula. Üretim föyü, sipariş detayları, teklif ve ZIP paketinde seçilen yaka ve kumaş açıkça yazsın. Onaylanmış eski siparişler değişmesin.
+
+11. GERÇEK KULLANIM TESTİ
+A) Sıfırdan gelen misafir: yöntem → futbol → V yaka → kumaş → model/renk → arma/sponsor → 3 oyuncu → taslak kaydet → paylaş → sipariş.
+B) Basketbol/voleybol için uygun yaka ve kumaş seçenekleri; futbol kalıbı kopyalanmasın.
+C) 'Benim İçin Tasarla' önerilerinde seçilen yaka/kumaş korunuyor mu?
+D) Kolay ↔ gelişmiş geçişte seçimler kayboluyor mu?
+E) Taslak kaydet/aç, paylaşım, üretim föyü ve ZIP'te yaka/kumaş/arma/sponsor doğru mu?
+F) 375/430/768/1440px ekranlarda hiçbir yatay taşma, kapanan buton veya gereksiz adım var mı?
+G) FL-1002 gibi eski onaylı siparişler değişmeden duruyor mu?
+H) İkinci müşteri hesabı başka müşterinin kayıtlarını veya admini görebiliyor mu? Görmemeli.
+I) Rakibe kıyasla adım ve tıklama sayısını raporla. Mümkünse ilk kez kullanan kişi için basit bir kullanım testi uygula; gerçek insan testi yapılmadıysa yapıldı deme.
+
+SON TALİMAT
+Bu aşama sadece 'yaka ve kumaş ekle' görevi değil; FormaLab'ı referans kadar basit ama daha güçlü hale getiren bütünsel kullanıcı deneyimi revizyonudur. Önce rakibi ve mevcut sistemi gözlemle; sonra akışı sadeleştir; yaka/kumaşı görsel ve işlevsel olarak ekle; otomatik tasarıma ve sipariş/üretime bağla; sonunda gerçek tarayıcıda uçtan uca test et. Eksikleri açıkça raporla. Mevcut verileri silme ve canlı entegrasyonlara dokunma.
