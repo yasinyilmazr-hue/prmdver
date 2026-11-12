@@ -1,0 +1,117 @@
+FORMALAB — CODEX İÇİN UYGULANACAK KESİN TALİMAT (PDF OKUMANA GEREK YOK)
+
+AMAÇ
+https://pixel-perfect-replay-15235.lovable.app/studyo adresindeki mevcut FormaLab stüdyosunun ÖN YÜZÜNÜ GERÇEKTEN YENİDEN TASARLA. Kullanıcı tekrar tekrar “kolay, görsel, anlaşılır” dediği halde arayüz değişmemiş. Bu kez yalnızca yeni seçenekleri veriye eklemek veya yazıları değiştirmek YETERLİ DEĞİL. Ekran düzenini, adım sırasını, ürün kartlarını ve gerçek forma önizlemelerini değiştir. Kod tabanında çalış, build/test çalıştır, değişikliklerin ekran görüntülerini göster.
+
+ÖNEMLİ: Bu görev için LOTTO PDF'sini okumana gerek yok. Katalogdaki gerekli içerikleri aşağıda tek tek çıkardım. PDF dosyası olmadan da bu görev tamamlanabilmeli. Kaynak katalogdaki ürünlerin adlarını ve gramajlarını aşağıdaki gibi kullan. Kullanıcı izin vermedikçe LOTTO logosu, marka fotoğrafları, özgün desenleri ve lisanslı font dosyalarını kopyalama. Referans ürün verisini özgün FormaLab arayüzü ve görselleriyle göster.
+
+MEVCUT SİSTEMİ KORU
+Mevcut giriş, taslak kaydetme, otomatik tasarım, arma/sponsor, sipariş/teklif, paylaşım/oylama, fiyat hesaplama, admin, üretim föyü/ZIP ve güvenlik işlevlerini bozma. Eski onaylı siparişlerin kalıplarını değiştirme. Gerçek ödeme/SMS/e-posta/kargo API ekleme. Öncelik yalnızca müşterinin stüdyo deneyimi ve ürün seçimi; mevcut backend yapısına yalnızca seçilen ürün özelliklerinin saklanması için gereken minimum uyumlu eklemeyi yap.
+
+İLK İŞ — EKRAN DENETİMİ
+Mevcut /studyo sayfasını tarayıcıda aç. 1440 ve 375 piksel ekran görüntüsü al. Kullanıcının şikâyeti: çok fazla ayar, görsel seçenekler eksik, kafa karıştıran adımlar. Kodda spor, yaka, kumaş, kol, etek, şort paçası, font ve model seçeneklerinin nereden geldiğini bul. Çalışan editörü atma; onun üzerine yeni kolay müşteri arayüzü kur.
+
+YENİ GÖRÜNÜM — GÖRSEL AĞIRLIKLI 5 ADIM
+İlk ekran iki büyük kart: 'Kendim Tasarlayacağım' / 'Benim İçin Tasarla'; mevcut taslağa devam bağlantısı.
+Sonra spor kartları: Futbol/Halı Saha, Kaleci, Basketbol, Voleybol, Antrenman.
+Spor seçilince 5 ANA ADIM:
+1) FORMA DETAYLARI: spor/model uyumlu yaka, kol, kumaş, etek ucu ve şort seçenekleri. Hepsi ayrı büyük RESİMLİ kartlar; yalnızca ilgili seçenekler gösterilsin. Her alt seçim bir bakışta anlaşılsın.
+2) MODEL & RENK: spor bazlı gerçek modellerin büyük ön/arka kartları, renk paletleri. İlk 6–8 model, 'Tümünü gör' ile kalanlar.
+3) ARMA & SPONSOR: iki ayrı isteğe bağlı büyük kart, önizlemede doğru yerleşim. Ek sponsorlar ikincil.
+4) TAKIM: şort/paça (şort seçilmişse), oyuncu adı-numara-beden, adet. Tek forma siparişinde kadro zorunlu değil.
+5) KONTROL: büyük ön/arka/tam takım, seçilen tüm özellikler, 'Düzenle', 'Taslağı Kaydet', 'Arkadaşlarımla Paylaş', 'Siparişe Devam Et'.
+Bu 5 adımın altında kısa alt seçimler olabilir; kullanıcının önüne 12 sayfa çıkarma. Önizleme her zaman büyük kalsın, seçim yapınca anında değişsin. Geri/Devam görünür olsun. Mobilde forma üstte, kartlar altta; 375/430/768/1440px taşmasın. Varsayılan kolay modda katman/koordinat/font dosyası gibi teknik ayrıntılar gösterme; 'Gelişmiş Düzenle' ile mevcut editör açılsın.
+
+PDF'DEN ÇIKARILAN KESİN ÜRÜN SEÇENEKLERİ
+
+A) FUTBOL / HALI SAHA
+YAKA — 6 farklı GÖRSEL:
+1 Ribanalı Yarım V Yaka
+2 Ribanalı Crescent Yaka
+3 Ribanalı Bindirme V Yaka
+4 Ribanalı V Yaka
+5 Ribanalı Yuvarlak Yaka
+6 Polo V Yaka
+KUMAŞ — 4 farklı GÖRSEL/DOKU:
+1 Mikrointerlok 160 gr
+2 Likra 180 gr
+3 Likralı Mesh 160 gr
+4 Esnek Jakarlı 160 gr
+ETEK UCU — 3 ayrı kesim GÖRSELİ:
+1 Dijital Full Biyeli
+2 Klasik Reçmeli
+3 Yırtmaçlı
+ŞORT PAÇASI — 2 GÖRSEL:
+1 Klasik Reçmeli
+2 Yırtmaçlı
+Futbol katalog modelleri: BRONZ, VENTU, NORA, REGGINA, STORM, PROLO, FEYENOORD, FLAG, EMPIRE, THUNDER, ZAGREB, HERO, LINA, LAVA, TRIANGLE, TREVI, SHADOW, MOUNTAIN, MIRROR, AJAX, SOLANO, TARGET, ULTRAMAX, SPIDER, ELIPS, VISION, PROTEUS, PADOVA, SPEED, EXACT, UDINE. Bunlar referans model adlarıdır. Kullanım hakkı doğrulanmamış özgün Lotto model görsellerini siteye kopyalama; mevcut FormaLab şablonlarını bu çeşitlilikte, özgün tasarımlarla eşleştir. Bir modele gerçek görsel eşlenmemişse sahte resim gösterme; 'görsel hazırlanıyor' durumunu raporla.
+Katalogda futbol baskı/şort kordonu seçenekleri ürün grubuna göre değişir: Silikon Kabartma/Silikon Kordon veya Dijital/Klasik Kordon. Her modele otomatik uygulatma; ürün grubuna göre yönetilebilir kıl.
+
+B) KALECİ
+Katalog modelleri: WINNER, SPIDER, KICK. Kaleci için ayrı uzun kollu kesim ve ön/arka önizleme. PDF'de bağımsız kaleci kumaş/yaka gramaj listesi verilmemiş; uydurma seçenek ekleme. Uygun seçenekler admin tarafından sonradan tanımlanabilir olsun.
+
+C) BASKETBOL
+YAKA — 2: Ribanalı V Yaka; Ribanalı Yuvarlak Yaka.
+KUMAŞ — 2: Mikrointerlok 160 gr; Petek 150 gr.
+ETEK UCU: Klasik Reçmeli.
+ŞORT KORDONU: Silikon Kordon (ürün uyumluluğuna göre).
+Basketbol maç forması modelleri: BLOCK, SET, SCORE, TURIN, CRYSTAL, MARS, SPIDER, FLASH, POINT, FLAG. Ayrı çift taraflı modeller: SOPRON, PARKER. Basketbol warm-up ayrı alt ürün kategorisi: SET, TURIN, CRYSTAL, FLAT. Maç forması kolsuz, warm-up kısa kollu olabilir; aynı ürün gibi karıştırma. Çift taraflı modelde iki yüzü ayrı göster.
+
+D) VOLEYBOL
+YAKA — 2: Ribanalı V Yaka; Ribanalı Yuvarlak Yaka.
+KOL — 3: Karpuz Kol; Sıfır Kol; Kısa Kol.
+KUMAŞ — 2: Mikrointerlok 160 gr; Likra (GRAMAY BELİRTİLMEMİŞ, UYDURMA).
+ETEK UCU: Klasik Reçmeli.
+ŞORT KORDONU: Silikon Kordon (uygun ürünlerde).
+Kadın voleybol referans modelleri: ROSE, STORM, ZAGREB, TROPEA, SOLANO, NICOLE, CRYSTAL, GARCIA, SPIDER, SIENA. Voleybol forma ve şortunun kendine özgü kesimi korunmalı.
+
+E) ANTRENMAN VE AKSESUAR
+Katalogda futbol çorabı renkleri ve antrenman yelekleri bulunuyor. Basketbol warm-up üstleri ayrı. Katalogda antrenman için kapsamlı yaka/kumaş listesi verilmemiş; futbol seçeneklerini kopyalama. Ürün tipi ve renkleri ayrı yönetilebilir olsun.
+
+SPOR BAZLI VERİ MANTIĞI
+Spor > ürün türü > model > geçerli yaka/kol/kumaş/etek/şort paçası > renk varyantı > font. Aynı 'SPIDER' veya 'STORM' adı farklı sporlarda ayrı kayıt olmalı. Branş değiştirilince uyumsuz seçimler kullanıcıya açıklansın; veri sessizce silinmesin. Tek geçerli seçenek varsa gereksiz seçim ekranı açma. Bir seçenek yoksa uydurma ve zorunlu tutma. Yönetici tüm bu seçeneklerin görselini, açıklamasını, aktifliğini, sırasını ve spor uyumluluğunu düzenleyebilsin.
+
+GÖRSEL KARTLAR ZORUNLU — SADECE YAZI YETMEZ
+Yaka kartında yakaya yakın plan gerçek farklı çizim; kumaş kartında doku örneği; etek ve şort paçasında farkı gösteren çizim; model kartında gerçek özgün forma önü/arkası. Birbirinin aynı placeholder resimlerini kullanma. Kullanıcı karta tıkladığında önizleme gerçekten değişsin. Desteklenmeyen görsel değişimi varmış gibi yapma. Gerçek üretici kumaş fotoğrafı yoksa 'temsili doku' etiketi kullan. Seçim kartlarında kısa ad ve gerekiyorsa tek satır açıklama; kalabalık metin yok.
+
+OYUNCU YAZI VE NUMARA FONTLARI — PDF'DEN ÇIKARILAN REFERANSLAR
+Futbol örnek etiketleri: SHARP, FESTIVO, FORTALE, BRICOLAGE, LUZ, BAYER, VALIENTE, SPORTZAN, KAISER, GUERRILLA, ARENA, BAGOR, BRAVURA, TURBO, ATLAS, GUNNERS.
+Salon sporları örnek etiketleri: ALEJO, TYPO, FESTIVO, FORTALE, BRICOLAGE, LUZ, BAYER, VALIENTE, SPORTZAN, CARGO CR, KAISER, GUERRILLA, ARENA, BAGOR, BRAVURA, TURBO, ATLAS, SLIMFIT.
+Bunlar KATALOGDA GÖRÜLEN STİL ADLARIDIR, elinde font dosyaları olduğu anlamına gelmez. Lisanslı dosyaları izinsiz çıkarma/kopyalama. İzinli Türkçe destekli fontlarla gerçek önizleme üret; birebir eşleşme yoksa orijinal fontmuş gibi etiketleme. Font seçimi kartında isim + örnek oyuncu adı/numarası görünsün.
+
+TÜRKÇE KARAKTERLER MUTLAKA DOĞRU ÇALIŞSIN
+Ç ç, Ğ ğ, I ı, İ i, Ö ö, Ş ş, Ü ü.
+Türkçe büyük harf dönüşümü tr-TR kurallarıyla; Unicode NFC; CSV UTF-8 Excel uyumu. Şu örnekleri her çıktı türünde test et:
+'ÇAĞRI ŞİMŞEK 10'
+'IŞIK ÖZTÜRK 07'
+'İLKER GÜNEŞ 19'
+Stüdyo önizlemesi, kaydet/aç, PNG, paylaşım görseli, PDF üretim föyü, ZIP ve CSV'de karakterler bozulmamalı. Gerekirse lisanslı Türkçe uyumlu fallback font kullan; sessizce boş kare üretme.
+
+OTOMATİK TASARIM VE KAYIT
+'Benim İçin Tasarla' mevcut kurallı motoru korusun. Aynı spor bazlı seçeneklerden beslensin; seçilen yaka, kumaş, kol, etek, şort paçası önerilerde korunsun. Takım arması ve sponsor ayrı, opsiyonel. Taslak kaydet/aç, arkadaşla paylaş, yorum/oy, teklif, sipariş, üretim föyü/ZIP akışında bu veriler eksiksiz taşınsın. Sahte SPONSOR/YILMAZ/10 yazısı asla kaydedilmiş çıktıya girmesin.
+
+YAPILACAK İŞİN SIRASI
+1. Mevcut /studyo ekranının önce ekran görüntüsünü al ve sorunları kısa yaz.
+2. Yukarıdaki katalog verilerini proje içinde tek merkezi ürün seçeneği kaynağına yerleştir; PDF'yi tekrar okumaya çalışma.
+3. Görsel kartlar için özgün küçük yaka, kumaş, etek, şort ve model önizlemeleri oluştur/bağla. Görsel olmayan seçeneği tamamlandı diye gösterme.
+4. 5 ana adımlı yeni kolay stüdyo arayüzünü GERÇEKTEN kodla; yalnızca metin ve buton rengi değiştirme.
+5. Branşa özel ürün seçeneklerini ve fontları gerçek seçim kontrollerine bağla.
+6. Seçimleri mevcut tasarım/sipariş/üretim veri akışına bağla.
+7. 375/430/768/1440 piksel ekranlarda ve gerçek tarayıcıda uçtan uca test et.
+8. Önce/sonra ekran görüntüleriyle teslim et.
+
+KABUL TESTİ — BUNLAR OLMADAN 'BİTTİ' DEME
+- Futbol: 6 farklı yaka görseli, 4 kumaş dokusu, 3 etek, 2 şort paçası; seçilince doğru önizleme.
+- Basketbol: 2 yaka, 2 kumaş, maç/warm-up/çift taraflı ayrımı.
+- Voleybol: 2 yaka, 3 kol, 2 kumaş; doğru kesim.
+- Kaleci: ayrı modeller, uzun kol, uydurma kumaş yok.
+- Her sporun model kartları ve ön/arka görüntüsü doğru; model isimleri karışmıyor.
+- Türkçe karakterli 3 test oyuncusu önizleme ve tüm dosyalarda doğru.
+- Taslak, paylaşım, sipariş, üretim föyü/ZIP ve eski onaylı siparişler bozulmamış.
+- Görsel değişiklik masaüstü ve mobil ÖNCE/SONRA ekran görüntülerinde açıkça belli.
+- Çalışmayan kart, sahte örnek metin, boş fonksiyon, taşan panel yok.
+
+TESLİM RAPORU
+'Yapıldı' demek yerine her branş için hangi yaka/kumaş/kol/etek seçeneklerinin gerçek görsel kartlarla çalıştığını, hangi fontların lisanslı olarak mevcut olduğunu, hangi modellerin gerçek özgün önizlemesinin bulunduğunu ve hangilerinin eksik kaldığını açıkça listele. Otomatik test sayısı ile gerçek tarayıcıda yapılan işlemleri ayır. Yeni özellik önermeden önce mevcut arayüzü bitir.
+
+NİHAİ HEDEF: Bilgisayar kullanmayı bilmeyen biri FormaLab'a girip sporunu seçsin, görsellerden ürün ayrıntılarını seçsin, formasını büyük önizlemede görsün ve 5 kolay adımda taslağını paylaşsın veya sipariş versin.
