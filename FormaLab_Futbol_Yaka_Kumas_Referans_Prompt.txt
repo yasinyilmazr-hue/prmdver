@@ -1,0 +1,47 @@
+FORMALAB — FUTBOL YAKA VE KUMAŞ SEÇENEKLERİ (REFERANS GÖRSELE GÖRE)
+
+Bu talimat mevcut FormaLab projesinin yaka ve kumaş seçimi ekranını düzenler. Kullanıcının gönderdiği “FUTBOL YAKA VE KUMAŞ.jpeg” referans görselindeki seçenekleri esas al. Mevcut V1–V12 özelliklerini, siparişleri, taslakları, otomatik tasarım motorunu, takım arması/sponsor ayrımını ve güvenlik kurallarını koru. Mevcut fiyatları değiştirme. Yeni canlı entegrasyon kurma.
+
+1) FUTBOL YAKA ÇEŞİTLERİ — TAM 6 SEÇENEK
+Referans görseldeki isimleri doğru Türkçe ile şu şekilde kullan:
+1. Ribanalı Yarım V Yaka
+2. Ribanalı Crescent Yaka
+3. Ribanalı Bindirme V Yaka
+4. Ribanalı V Yaka
+5. Ribanalı Yuvarlak Yaka
+6. Polo V Yaka
+
+Her yaka ayrı, doğru kesimli ve birbirinden gözle ayırt edilebilir olmalı. Özellikle Yarım V, Bindirme V, normal V ve Crescent yakayı aynı şekil gibi gösterme. Polo V Yaka'da polo yaka yapısı görünmeli. Kullanıcı karta dokunduğunda forma önizlemesindeki yaka gerçekten değişmeli. Yaka rengi forma renklerine uyarlanabilsin.
+
+2) FUTBOL KUMAŞ ÇEŞİTLERİ — TAM 4 SEÇENEK
+1. Mikrointerlok 160 gr
+2. Likra 180 gr
+3. Likralı Mesh 160 gr
+4. Esnek Jakarlı 160 gr
+
+Bu isimleri ve gramajları aynen koru. Kumaş kartlarında yakın plan doku görseli, isim ve gramajı göster. Gerçek doku fotoğrafları mevcutsa kullan; yoksa kullanıcıya örnek görsel olduğu belli olsun. Kumaş özellikleri, fiyat farkları, stok ve üretim vaatleri hakkında doğrulanmamış bilgiler uydurma. Yönetici panelinden her kumaşın açıklaması, görseli, uygun sporları, aktif/pasif durumu ve varsa fiyat farkı düzenlenebilsin.
+
+3) KULLANICI DENEYİMİ
+Futbol/Halı Saha seçildikten sonra iki çok basit seçim ekranı göster:
+- 'Yakanı Seç' — altı büyük görsel kart.
+- 'Kumaşını Seç' — dört büyük doku kartı.
+Müşteri tek dokunuşla seçim yapabilsin. Seçilen kart belirgin olsun. 'Geri' ve 'Devam Et' kolay görülsün. Her iki seçim de daha sonra değiştirilebilsin.
+Masaüstünde büyük forma önizlemesi yanında kartlar; mobilde üstte forma, altta rahat dokunulan kartlar olsun. 375/430/768/1440px ekranlarda test et. Teknik detaylar ve gereksiz uzun açıklamalarla ekranı doldurma.
+
+4) TASARIM VE OTOMATİK MOTOR ENTEGRASYONU
+Seçilen yaka hem 'Kendim Tasarlayacağım' hem 'Benim İçin Tasarla' akışında geçerli olsun. Otomatik önerilerin tamamı seçilen yaka modelini korusun. Kumaş seçimi tasarım taslağı, sipariş, teklif, müşteri onayı, üretim föyü ve üretici ZIP dosyasında doğru isim ve gramajıyla saklansın. Gelişmiş moda geçince seçimler kaybolmasın. Onaylı eski siparişleri sessizce değiştirme.
+
+5) REFERANS GÖRSEL KULLANIMI
+Görselde bir spor markasının logosu var. Marka logosunu, grafiklerini ve fotoğraflarını aynen kopyalayıp siteye koyma. Yalnızca yaka ve kumaş türlerinin adlarını referans al; FormaLab için özgün, temiz ve premium seçim görselleri hazırla. Referans görseldeki siyah-turuncu afiş düzenini taklit etme.
+
+6) TESTLER
+- Altı yakanın tamamını tek tek seç; her birinin önizlemede farklı doğru kesim oluşturduğunu doğrula.
+- Dört kumaşı tek tek seç; seçim adı ve gramajı doğru saklansın.
+- Otomatik forma önerisi üret; yaka/kumaş tercihleri korunuyor mu kontrol et.
+- Taslak kaydet, çık, yeniden aç; yaka ve kumaş aynı mı?
+- Test siparişi oluştur; sipariş detayında ve üretici ZIP'inde aynı seçenekler var mı?
+- Mobil ve masaüstü ekranlarda kartlar, geri/ileri butonları ve forma önizlemesi taşmadan çalışıyor mu?
+- Eski tasarımlar ve siparişler etkilenmemiş mi?
+
+SON HEDEF
+Müşteri sporunu seçtikten sonra altı yaka ve dört kumaş seçeneğini görsel kartlardan kolayca seçsin. FormaLab, referanstaki kadar anlaşılır ama daha modern ve kullanışlı olsun. Bu görevin odağı doğru yaka/kumaş içerikleri ve bunların bütün tasarım-sipariş akışına eksiksiz bağlanmasıdır.
