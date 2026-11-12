@@ -1,0 +1,75 @@
+FORMALAB — CODEX SON STÜDYO UX REVİZYONU: BÜYÜK ÜRÜN, TEK TEK ADIM, ÖN/ARKA VE ŞORT/ÇORAP
+
+MEVCUT UYGULAMAYI DEĞİŞTİR. SADECE PLAN YAZMA.
+Mevcut /studyo sayfası hâlâ karışık. Kullanıcı üst forma rengi, alt şort rengi, yazılar, ürünler ve ayarların aynı anda göründüğünü; ürün görsellerinin çok küçük kaldığını; arka tarafa eklenen yazının yanlış yerleştiğini söylüyor. İstenen deneyim: referans https://www.formayaptirma.net/forma-tasarla kadar kolay, adım adım; önce ÜST FORMA büyük yakın plan, sonra arka yüz, daha sonra ŞORT, en son ÇORAP ve tam takım. Kullanıcı bir anda tüm ürünü ve tüm ayarları görmemeli.
+
+Referans site doğrulama ekranıyla engelleniyorsa etkileşimlerini görmüş gibi iddia etme. Bu metindeki kullanıcı tarifini KESİN UX ŞARTNAMESİ olarak uygula. Mevcut stüdyonun önce/sonra ekran görüntülerini al. 375, 430, 768 ve 1440 pikselde doğrula.
+
+ÖNCELİK 1 — ÜRÜN ODAKLI ADIMLI AKIŞ
+Başlangıç: 'Kendim Tasarlayacağım' / 'Benim İçin Tasarla' ve spor seçimi korunacak.
+Kolay tasarımda görsel süreç şu sırada olsun:
+1. FORMA MODELİ: spor, model ve uygun yaka/kumaş/kol/etek ucu; tek karar grubu, büyük görsel kartlar.
+2. FORMA ÖNÜ: sadece ÜST FORMA büyük yakın plan. Ön yüz desen ve ana/ikincil renkler; takım arması ve ön sponsorları burada ekle. ŞORT VE ÇORAP bu ekranda GÖRÜNMEYECEK. Üst formanın altındaki alan boş, nefes alanı olsun.
+3. FORMA ARKASI: aynı üst forma büyük yakın plan, ARKA YÜZ. Oyuncu adı ve numarası, sırt sponsoru burada eklenir. Ön yüzü yanlışlıkla değiştirme. Yazılar sadece ilgili yüzün tanımlı baskı alanında kalır.
+4. ŞORT: artık büyük ŞORT görseline geç. Forma küçük özet veya hiç görünmeyebilir. Şort ekle/atla; renk, paça tipi, arma ve numara; seçimler canlı şort önizlemesinde. Şort yoksa otomatik geç.
+5. ÇORAP: artık büyük ÇORAP görseli. Çorap ekle/atla; renk ve uygun varyant. Çorap seçeneği yoksa atla.
+6. TAKIM VE BEDENLER: basit oyuncu adı, numara, forma bedeni, şort bedeni, adet; CSV ikincil.
+7. SON KONTROL: ilk kez tam takım (forma önü/arkası + şort + çorap) birlikte, büyük ve düzenli sunum. Kaydet, paylaş, sipariş.
+BUNLARI ÜSTTE 5 ANA AŞAMADA GRUPLA: 'Forma' (ön/arka), 'Şort', 'Çorap', 'Oyuncular', 'Kontrol'. Model/yaka/kumaş Forma adımının başında kısa alt seçimdir. Her alt seçimde bir ürün ve bir karar göster; gereksiz ara ekranları azalt. 'Geri' ve 'Devam' sabit, her aşama net. Ürün seçimleri siparişe zorunlu olmayan yerde 'Atla' ile geçilebilir.
+
+ÖNCELİK 2 — GERÇEKTEN BÜYÜK ÜRÜN GÖRSELLERİ
+Masaüstünde ekranın merkezinin ana odağı tek ürün olmalı; aktif üst forma sahnenin yaklaşık %65–75'ini kaplasın, doğal en-boy oranını korusun. Mobilde ürün görseli ekranın üst bölümünde büyük ve net, seçenekler altında. 2–3 küçük forma/şort/çorap yan yana sıkıştırma. Ön/arka geçişinde aynı ölçek ve pozisyon. Seçenek kartlarında yakalar ve kumaşlar büyütülmüş detay olarak gösterilsin. 3D iddiası gerekmez; gerçekçi ve doğru oranlı 2D mockup yeterlidir.
+Şort aşamasında yalnızca şortu büyüt, çorap aşamasında yalnızca çorabı büyüt. Son aşamada tam takım görünümünü ver. Kullanıcı ürünü rahat görmeden seçim yapmaya zorlanmasın.
+Önizlemede seçili öğe tutamaçları normal görünümde gizli; yalnızca düzenleme sırasında gösterilsin.
+
+ÖNCELİK 3 — ARKA YÜZ YAZI/NUMARA HATASI
+Mevcut arka yazı yerleşimi bozuk: metin formanın arkasında geniş alana yayılıyor, kenara taşıyor veya ön/arka koordinatları karışıyor. Sorunu kökten düzelt:
+- Ön ve arka yüz için bağımsız koordinat sistemleri ve baskı alanları.
+- Arka oyuncu adı üst sırt bölgesinde, numara orta sırt bölgesinde, sponsor uygun ayrı alanda; birbirleriyle çakışmasın.
+- Metin varsayılan olarak yatay ortalı, makul boyutta ve baskı güvenli alanında olsun.
+- Uzun isimde otomatik ölçekleme/satır yönetimi ve anlaşılır uyarı. Metin tüm forma genişliğine yayılmasın; overflow gizleyip sorunu saklama.
+- Font boyutu, satır yüksekliği, letter spacing, SVG text anchor ve dönüşüm koordinatlarını kontrol et.
+- İsim/numara bir oyuncudan diğerine geçerken doğru güncellensin. Ön yüz tasarımı etkilenmesin.
+- 'ÇAĞRI ŞİMŞEK', 'IŞIK ÖZTÜRK', 'İLKER GÜNEŞ' ile test et. Türkçe İ/ı/Ş/Ğ dahil karakterler doğru görünsün.
+- Kaydet/aç, paylaşım önizlemesi, PNG, sipariş ve üretim ZIP dosyasında aynı yerleşim. Onaylı eski siparişleri değiştirme.
+
+ÖNCELİK 4 — SEÇİM PANELİ TEK İŞ ODAKLI
+Forma önünde 'Model/Desen', 'Renk', 'Arma', 'Sponsor' küçük ve sırayla açılan alt başlıklar; tüm ayarları aynı anda gösterme.
+Arka yüzde 'İsim/Numara' ve 'Sırt sponsoru'.
+Şortta 'Şort ekle', 'Renk', 'Paça', 'Numara'.
+Çorapta 'Çorap ekle', 'Renk'.
+Yaka/kumaş/etek gibi detaylar seçilirken yakın plan görsel kartlar; seçim sonrası forma sahnesine dön.
+Kullanıcı 'Gelişmiş Düzenle' derse mevcut tam araçlar açılır; Kolay moda dönünce veri kaybolmaz.
+Teknik koordinat, katman ve onlarca renk bölgesi varsayılan kolay modda görünmesin.
+
+ÖNCELİK 5 — KATALOGDAN ÇIKARILMIŞ BRANŞ SEÇENEKLERİ (PDF OKUMANA GEREK YOK)
+FUTBOL: Yakalar = Ribanalı Yarım V Yaka, Ribanalı Crescent Yaka, Ribanalı Bindirme V Yaka, Ribanalı V Yaka, Ribanalı Yuvarlak Yaka, Polo V Yaka. Kumaş = Mikrointerlok 160 gr, Likra 180 gr, Likralı Mesh 160 gr, Esnek Jakarlı 160 gr. Etek ucu = Dijital Full Biyeli, Klasik Reçmeli, Yırtmaçlı. Şort paça = Klasik Reçmeli, Yırtmaçlı.
+BASKETBOL: Yaka = Ribanalı V Yaka, Ribanalı Yuvarlak Yaka. Kumaş = Mikrointerlok 160 gr, Petek 150 gr. Etek = Klasik Reçmeli. Maç forması, çift taraflı ve warm-up ürünlerini karıştırma.
+VOLEYBOL: Yaka = Ribanalı V Yaka, Ribanalı Yuvarlak Yaka. Kol = Karpuz Kol, Sıfır Kol, Kısa Kol. Kumaş = Mikrointerlok 160 gr, Likra (gramaj belirtilmemiş). Etek = Klasik Reçmeli.
+KALECİ: Ayrı uzun kollu modeller; PDF'de ayrı kaleci kumaş/yaka listesi yok, uydurma.
+ANTRENMAN: Tanımlanmış ürün seçeneklerini göster; futbol detaylarını körlemesine kopyalama.
+ŞORT/ÇORAP: Spor ve seçili ürün için geçerli varyantları göster; tanımlanmamış ürün özellikleri uydurma. Mevcut çorap renklerini koru. Tüm seçimler model, spor ve ürün uyumluluğuna göre filtrelensin.
+
+ÖNCELİK 6 — TASARIM, FONTS VE KAYIT
+Takım arması ve sponsor birbirinden ayrı. Sahte SPONSOR/YILMAZ/10 yazıları tasarıma eklenmez. Kullanıcının gerçek metni izinsiz silinmez.
+Font referansları: Futbol için SHARP, FESTIVO, FORTALE, BRICOLAGE, LUZ, BAYER, VALIENTE, SPORTZAN, KAISER, GUERRILLA, ARENA, BAGOR, BRAVURA, TURBO, ATLAS, GUNNERS. Salon sporları için ALEJO, TYPO, FESTIVO, FORTALE, BRICOLAGE, LUZ, BAYER, VALIENTE, SPORTZAN, CARGO CR, KAISER, GUERRILLA, ARENA, BAGOR, BRAVURA, TURBO, ATLAS, SLIMFIT. Bunlar referans stil adlarıdır; lisanslı orijinal font yoksa lisanslı Türkçe destekli alternatif kullan, orijinalmiş gibi gösterme.
+Türkçe karakterler Ç ç, Ğ ğ, I ı, İ i, Ö ö, Ş ş, Ü ü stüdyo, PNG, paylaşım, PDF, ZIP ve CSV'de doğru. tr-TR büyük/küçük dönüşümü ve UTF-8 uyumu.
+Sipariş ve üretim dosyalarında yaka, kumaş, etek, şort paçası, çorap, arma, sponsor, oyuncu bilgileri ayrı saklansın.
+
+ÖNCELİK 7 — PREMIUM AMA BASİT GÖRSEL TASARIM
+Referans site gibi adım adım anlaşılır; FormaLab daha ferah ve premium. Açık nötr zemin, temiz tipografi, küçük açıklamalar, tek ana CTA. Ekranın yarısını kaplayan dev başlıklar, ağır gradient, çoklu kart yığınları, minik ürün görselleri yok. Kullanıcı nereye tıklayacağını ilk bakışta anlasın. Mobilde alt CTA klavyeyi ve araçları kapatmasın.
+
+ÇALIŞMA ŞEKLİ VE KABUL
+1. /studyo'nun mevcut masaüstü/mobil ekran görüntülerini al.
+2. Kod tabanında mevcut kolay mod state/step akışını incele.
+3. Ürün-odaklı 5 ana adım düzenini uygula; üst forma → arka → şort → çorap → kontrol sırasını gerçekten kur.
+4. Aktif ürünün büyük önizlemesini yap.
+5. Arka yazı koordinat/taşma hatasını düzelt.
+6. Katalog seçeneklerini ilgili adımlarda resimli kartlarla göster; sadece isim eklemek yeterli değil.
+7. Kaydet/aç/paylaş/sipariş/üretim akışlarını koru.
+8. Tarayıcıda en az şu senaryoyu çalıştır: Futbol → V yaka → kumaş → üst forma rengi → arka isim 'ÇAĞRI ŞİMŞEK' / 10 → şort rengi ve paçası → çorap rengi → son tam takım → taslak kaydet → tekrar aç. Basketbol ve voleybolda branşa özel seçenekleri dene.
+9. 375/430/768/1440px görsel test; önce/sonra ekran görüntülerini göster.
+10. Build ve otomatik testleri çalıştır; mevcut sipariş/rol güvenliğini bozma.
+11. Gerçekten uygulanmayan, test edilmeyen işleri açıkça raporla. 'Bitti' demeden önce büyük ürün görselleri ve ürün odaklı adımların görsel kanıtını göster.
+
+BU İŞİN BAŞARI KRİTERİ: Kullanıcı artık ilk ekranda küçücük tam takım ve bütün renk seçeneklerini görmeyecek. Önce yalnızca üst forma büyük görünecek, arka yüzü ayrı düzenleyecek, ardından şort büyük açılacak, sonra çorap, en son tüm takım bir arada. Her ekran bir ürün ve tek karar odaklı olacak.
